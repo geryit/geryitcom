@@ -1,0 +1,25 @@
+/*Html5 Video Player Customize*/
+.video-js-box{}
+.video-js-box ul{float:none;}
+.vjs-controls{padding-left:50px!important;padding-right:175px!important;}
+.vjs-controls>li{font-size:10px!important;}
+.vjs-controls>li>span{font-family:Georgia, "Times New Roman", Times, serif!important;}
+.vjs-play-control{width:32px!important;height:32px!important;border-radius:0!important;-webkit-border-radius:0!important;-moz-border-radius:0!important;bottom:10px!important;}
+.vjs-play-control:hover{background:#0066ff!important;}
+.vjs-play span{border-top-width:7px!important;border-left-width:7px!important;border-bottom-width:7px!important;margin:9px 0 0 13px!important;}
+.vjs-pause span{width:2px!important;height:14px!important;margin:9px 0 0 10px!important;}
+.vjs-progress-control,.vjs-progress-holder,.vjs-play-progress,.vjs-load-progress,.vjs-fullscreen-control{border-radius:0!important;-webkit-border-radius:0!important;-moz-border-radius:0!important;}
+.vjs-progress-holder{margin-right:10px!important;}
+.vjs-progress-control .vjs-play-progress{background:#0066ff!important;}
+.vjs-time-control{width:70px!important;right:105px!important;}
+.vjs-volume-control{right:70px!important;width:35px!important;}
+.vjs-volume-control ul{margin-left:0!important;}
+.vjs-volume-control ul .vjs-volume-level-on{border-color:#0066ff!important;}
+.vjs-fullscreen-control{width:20px!important;right:40px!important;padding:0 2px 0 8px!important;}
+.vim-css .vjs-fullscreen-control:hover ul li:nth-child(3), .vim-css .vjs-fullscreen-control:hover ul li:nth-child(4), .vim-css.vjs-fullscreen .vjs-fullscreen-control:hover ul li:nth-child(1), .vim-css.vjs-fullscreen .vjs-fullscreen-control:hover ul li:nth-child(2){border-bottom-color:#0066ff!important;}
+.vim-css .vjs-fullscreen-control:hover ul li:nth-child(1), .vim-css .vjs-fullscreen-control:hover ul li:nth-child(2), .vim-css.vjs-fullscreen .vjs-fullscreen-control:hover ul li:nth-child(3), .vim-css.vjs-fullscreen .vjs-fullscreen-control:hover ul li:nth-child(4){border-top-color:#0066ff!important;}
+.vjs-hd-control{width:25px!important;right:10px;line-height:32px;padding-right:5px!important;font-size:11px!important;cursor:pointer!important;}
+.vjs-hd-control span{display:block!important;width:20px!important;height:12px!important;float:left;color:#fff;margin-top:0px;font-weight:bold;font-size:14px;}
+.vjs-hd-control span:hover{color:#0066ff;}
+.vjs-hd-control .hd_on{color:#0066ff;}
+.fsr{position:absolute;width:100%;height:100%;top:0;left:0;}

@@ -1,0 +1,53 @@
+<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 blog-content">
+    <p>Due to Genymotion's fluidness and ease of use, it now becomes the most popular android emulator allows&nbsp;android developers to test their app directly on their computer.</p>
+    <p>However, it still lacks of Google Services just like Google Play Store, Google Maps, etc. on Genymotion emulator which&nbsp;makes us developer not be able to test those functionalities that use Google Services for example GCM Push Notifications or Google Maps.</p>
+    <p>Anyway it is not a problem anymore since there is some simple steps to do to make Google Services be avaiable on Genymotion with some help from <strong>CyanogenMod's gapps</strong>.</p>
+    <p><strong>Step 1: Install&nbsp;ARM Translation</strong> - The secret behind Genymotion's fluidness is its ROM is compiled to x86 to match the most popular computer's CPU Architecture. But CyanogenMod's gapps is compiled in ARM. That's the reason why we can't just simply install gapps on Genymotion. To make it works, we need to install an <strong>ARM Translation</strong> which will let those ARM apps be able to run on this x86 virtual device.</p>
+    <p>To install, download&nbsp;<a href="http://filetrip.net/dl?4SUOrdcMRv" target="_blank">Genymotion-ARM-Translation_v1.1zip</a>&nbsp;and then drop&amp;drop the downloaded file to an opened Genymotion virtual device. After file transfering is done, there will be a confirmation dialog like below. Just simple click <strong>OK</strong> to flash it on virtual device.</p>
+    <p><img class="width-100percent" src="http://inthecheesefactory.com/uploads/source/genymotion/armtranslationflash.jpg" alt="armtranslationflash" /></p>
+    <p>There will be an another dialog to let you know that the&nbsp;flashing process is done.&nbsp;</p>
+    <p><img class="width-100percent" src="http://inthecheesefactory.com/uploads/source/genymotion/armtranslationflashed.jpg" alt="armtranslationflashed" /></p>
+    <p>You need to reboot the virtual device now but we don't suggest to just close the virtual device and relaunch&nbsp;it once again since it may leads to some weird behaviour. To make it done completely find, you need to reboot the device through command line like this:</p>
+    <pre class="brush:bash;auto-links:false;toolbar:false" contenteditable="false">adb reboot</pre>
+    <p>In case you accidentally close the virtual device, don't be panic. You might need to relaunch for a few times before it can&nbsp;boot up.</p>
+    <p><strong>Step 2: Install gapps</strong> - Before we go on to the next step, you need to download the flashable zip of gapps by your virtual device's Android version:</p>
+    <p><a href="https://www.androidfilehost.com/?fid=95784891001614559" target="_blank">Android 5.0.x</a>, <a href="https://www.androidfilehost.com/?fid=95832962473395379" target="_blank">Android 4.4.x</a>, <a href="https://www.androidfilehost.com/?fid=23060877490000124" target="_blank">Android 4.3.x</a>, <a href="https://www.androidfilehost.com/?fid=23060877490000128" target="_blank">Android 4.2.x</a>, <a href="https://www.androidfilehost.com/?fid=22979706399755082" target="_blank">Android 4.1.x</a>, <a href="https://www.androidfilehost.com/?fid=22979706399755108" target="_blank">Android 4.0.x</a>, <a href="https://www.androidfilehost.com/?fid=22979706399755027" target="_blank">Android 2.3.3</a></p>
+    <p>And then drop&amp;drop the downloaded file to a virtual device like previous and go through the flashing process.</p>
+    <p><img class="width-100percent" src="http://inthecheesefactory.com/uploads/source/genymotion/flashgapps.jpg" alt="flashgapps" /></p>
+    <p>Reboot the virtual device once again.</p>
+    <pre class="brush:bash;auto-links:false;toolbar:false" contenteditable="false">adb reboot</pre>
+    <p>After the virtual device is booted up, you will notice that <strong>Google Play services has stopped</strong>&nbsp;problem will keep popping up like this:</p>
+    <p><img class="width-100percent" src="http://inthecheesefactory.com/uploads/source/genymotion/unfortunate.jpg" alt="unfortunate" /></p>
+    <p>Don't be surprised and don't panic. You did it all right. This error happens because the installed gapps is just&nbsp;too old and didn't match the latest ROM Genymotion provided. All you need to do is be patient and login to Google Play Store and update all of installed app.</p>
+    <p><img class="width-100percent" src="http://inthecheesefactory.com/uploads/source/genymotion/updateall.jpg" alt="updateall" /></p>
+    <p>And also don't forget to update <strong>Google Play Services</strong>&nbsp;as well. It should be notified through the&nbsp;device's notification area after your pressed the <em>Update All</em> button in Google Play Store.</p>
+    <p>Congratulations, Google Play Services are now available on your Genymotion virtual device. A by-product of this installation is you are also able to run the app compiled in ARM on Genymotion as well.</p>
+    <p><img class="width-100percent" src="http://inthecheesefactory.com/uploads/source/genymotion/done.jpg" alt="done" /></p>
+    <p>Hope you find this article helpful. =)</p>
+    <p><strong>Source:</strong> <a href="http://forum.xda-developers.com/showthread.php?t=2528952" target="_blank">XDA-Developers</a>, <a href="http://wiki.cyanogenmod.org/w/Google_Apps" target="_blank">CyanogenMod</a></p>                	<table class="table" style="width: 100%; background-color: #f4f4f4; border-radius: 6px;">
+    <tbody>
+    <td style="border: 0px; width: 64px; padding: 16px 0px 16px 16px;"><img src="http://inthecheesefactory.com/themes/starter/images/profile_pic_nuuneoi2.png?a=1" width=48/></td>
+    <td style="border: 0px; padding: 16px;" class="small">
+        Author: <strong>nuuneoi</strong><br/>
+        <div class="text-muted small">A full-stack developer with more than 6 years experience on Android Application Development and more than 12 years in Mobile Application Development industry. Also has skill in Infrastucture, Service Side, Design, UI&amp;UX, Hardware, Optimization, Cooking, Photographing, Blogging, Training, Public Speaking and do love to share things to people in the world!</div>
+    </td>
+    </tbody>
+</table>
+    <div>
+        <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://inthecheesefactory.com/blog/how-to-install-google-services-on-genymotion/en" data-count="horizontal" data-via="thecheesefact">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+
+        <!-- Place this tag where you want the +1 button to render -->
+        <g:plusone size="medium" href="http://inthecheesefactory.com/blog/how-to-install-google-services-on-genymotion/en"></g:plusone>
+        <!-- Place this render call where appropriate -->
+        <script type="text/javascript">
+            (function() {
+                var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                po.src = 'https://apis.google.com/js/plusone.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+            })();
+        </script>
+
+        <br/><div class="fb-like" data-href="http://inthecheesefactory.com/blog/how-to-install-google-services-on-genymotion/en" data-width="100%" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+    </div>
+    <div class="clearfix"></div>
+</div>

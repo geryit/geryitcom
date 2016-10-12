@@ -1,0 +1,10 @@
+body{font-family:Helvetica, Georgia, "Times New Roman", Times, serif;font-size:11px;margin:10px;}
+div,ul,il,a,b{display:block;position:relative;padding:0;margin:0;font-weight:normal;border:none;font-size:12px;top:0;left:0;outline:none;list-style:none;}
+#menu_mask{float:left;width:200px;height:500px;overflow:hidden;background:#eee;margin-top:50px;padding:10px 0;}
+#menu_mask ul{float:left;margin-left:10px;}
+#menu_mask ul:first-child{margin-left:0;}
+#menu_mask ul li{float:left;width:100%;margin:1px 0;}
+#menu_mask ul li a{float:left;color:#000;clear:both;outline:none;text-decoration:none;padding-left:20px;}
+#menu_mask ul li a:hover{color:#999;}
+#menu_mask ul li a b{position:absolute;display:inline-block;width:15px;text-align:center;}
+#menu_mask ul li ul{display:none;}

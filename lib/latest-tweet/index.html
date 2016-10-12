@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Latest Tweet</title>
+		<style>
+		body{
+			background: #fff;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="twitterPost"></div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+		<script>
+		$(document).ready(function() {		 
+		    /* Begin get last tweet (@geryit)*/
+		    $.getJSON('http://twitter.com/statuses/user_timeline/geryit.json?callback=?', function(data) {
+				var html = "<b><a href='http://twitter.com/geryit/statuses/" + data[0].id + "' target= '_blank'>" + relative_time(data[0].created_at) + "</a></b> " + linkify(data[0].text);
+				$("#twitterPost").html(html);
+			});
+		    /* End get last tweet */
+		});
+		 
+		/* Begin Convert Str to Url */
+		function linkify(txt){
+		    var regexp = /((ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?)/gi;
+		    return txt.replace(regexp,'<a href="$1">$1</a>');
+		}
+		/* End Convert Str to Url */
+		
+		/* Begin Convert Tweet Time */
+		function relative_time(time_value) {
+			var values = time_value.split(" ");
+			time_value = values[1] + " " + values[2] + ", " + values[5] + " " + values[3];
+			var parsed_date = Date.parse(time_value);
+			var relative_to = (arguments.length > 1) ? arguments[1] : new Date();
+			var delta = parseInt((relative_to.getTime() - parsed_date) / 1000);
+			delta = delta + (relative_to.getTimezoneOffset() * 60);
+			var r = '';
+			if (delta < 60) {
+				r = 'a minute ago';
+			} else if (delta < 120) {
+				r = 'couple of minutes ago';
+			} else if (delta < (45 * 60)) {
+				r = (parseInt(delta / 60)).toString() + ' minutes ago';
+			} else if (delta < (90 * 60)) {
+				r = 'an hour ago';
+			} else if (delta < (24 * 60 * 60)) {
+				r = '' + (parseInt(delta / 3600)).toString() + ' hours ago';
+			} else if (delta < (48 * 60 * 60)) {
+				r = '1 day ago';
+			} else {
+				r = (parseInt(delta / 86400)).toString() + ' days ago';
+			}
+			return r;
+		}
+		/* End Convert Tweet Time */
+		</script>
+	</body>
+</html>

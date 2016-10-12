@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+	<head>
+		<title>chart</title>
+		<style>
+		body{
+			margin: 50px;
+		}
+		ul{
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		
+		#os-usage{
+			border: 1px solid #000;
+			float: left;
+			padding: 10px 20px;
+			width: 180px;
+		}
+		#os-usage h1{
+			font-size: 14px;
+			float: left;
+			width: 100%;
+		}
+		#os-usage ul{
+			float: left;
+			width: 100%;
+		}
+		#os-usage ul li{
+			float: left;
+			width: 100%;
+		}
+		#os-usage ul li .color{
+			width: 10px;
+			height: 10px;
+			float: left;
+			margin-top: 3px;
+		}
+		#os-usage ul li .os{
+			float: left;
+			margin-left: 5px;
+		}
+		#os-usage ul li .perc{
+			float: right;
+		}
+		
+		#pie-chart{
+			width: 200px;
+			height: 200px;
+			float: left;
+			position: relative;
+			margin-left: 40px;
+			-webkit-transform: rotate(15deg) skew(15deg, 15deg);
+			-moz-transform: rotate(15deg) skew(15deg, 15deg);
+		}
+		#pie-chart li{
+			clip: rect(0px 200px 200px 100px);
+			height: 200px;
+			left: 0;
+			position: absolute;
+			width: 200px;
+			//background: #000;
+		}
+		#pie-chart li.gt50{
+			clip: rect(auto,auto,auto,auto);
+		}
+		#pie-chart li::before , #pie-chart li::after{
+			content:"";
+			position:absolute;
+			width:200px;
+			height:200px;
+			clip:rect(0px,100px,200px,0px);
+			-moz-border-radius:100px;
+			-webkit-border-radius:100px; 
+			border-radius:100px; 
+		}
+		#ios{
+			-moz-transform:rotate(0deg); 
+			-webkit-transform: rotate(0deg);
+		}
+		#ios::before{
+			background-color: #4db5f9;
+			-moz-transform:rotate(180deg); 
+			-webkit-transform: rotate(180deg);
+		}
+		#ios::after{
+			background-color: #4db5f9;
+			-moz-transform:rotate(220deg); 
+			-webkit-transform: rotate(220deg);
+		}
+		#and{
+			-moz-transform:rotate(220deg); 
+			-webkit-transform: rotate(220deg);
+		}
+		#and::before{
+			background-color: #cfe700;
+			-moz-transform:rotate(82deg); 
+			-webkit-transform: rotate(82deg);
+		}
+		#oth{
+			-moz-transform:rotate(302deg); 
+			-webkit-transform: rotate(302deg);
+		}
+		#oth::before{
+			background-color: #ccc;
+			-moz-transform:rotate(58deg); 
+			-webkit-transform: rotate(58deg);
+		}
+
+		
+		</style>
+	</head>
+	<body>
+		<div id="os-usage">
+			<h1>Top Mobile OSs in Sweden</h1>
+			<ul>
+				<li><span class="color" style="background:#4db5f9"></span><span class="os">iOS</span><span class="perc">61%</span></li>
+				<li><span class="color" style="background:#cfe700"></span><span class="os">Android</span><span class="perc">23%</span></li>
+				<li><span class="color" style="background:#ccc"></span><span class="os">Others</span><span class="perc">16%</span></li>
+			</ul>
+		</div>
+		<ul id="pie-chart">
+			<li id="ios" class="gt50"></li>
+			<li id="and"></li>
+			<li id="oth"></li>
+		</ul>
+		
+	</body>
+</html>

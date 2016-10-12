@@ -1,0 +1,75 @@
+body{
+	background: #fff;
+	margin: 0;
+}
+
+/*Our container*/
+#snowContainer{
+	width: 100%;
+	height: 200px;
+	position: relative;
+	overflow: hidden;
+	
+}
+
+/*Global styles for snowflakes.*/
+#snowContainer>div{
+	width: 32px;
+	height: 32px;
+	top: -32px;
+	background: url(../images/snow.png) no-repeat center !important;
+	position: absolute;
+}
+
+/* STYLES FOR WEBKIT BROWSERS (Safari, Chrome)*/
+	/*3 animations applied*/
+	#snowContainer>div{
+		-webkit-animation-name: snow ,swing, fadeOut;
+		-webkit-animation-iteration-count: infinite;
+	}
+	
+	/*Move flakes 600px in y-position and rotate 180 degrees while moving*/
+	@-webkit-keyframes snow {
+		0% { -webkit-transform: translate(0px, -32px); }
+		100% { -webkit-transform: translate(0px, 200px) rotate(180deg); }
+	}
+	
+	/*Move left and right*/
+	@-webkit-keyframes swing {
+		0%{ margin-left: 0; }
+		33%{ margin-left: -50px; }
+		66%{ margin-left: 50px; }
+		100%{ margin-left: 0px; }
+	}
+	
+	/*Fade out the flakes when they are close to the bottom*/
+	@-webkit-keyframes fadeOut {
+		0% { opacity: 1; }
+		80% { opacity: 1; }
+	    100% { opacity: 0; }
+	}
+
+/* STYLES FOR OTHER BROWSERS (Might be implemented to Firefox 4)*/
+/*Will be needed when Css3 Animations support is available ( http://dev.w3.org/csswg/css3-animations/ )*/
+	#snowContainer>div{
+		animation-name: snow, swing, fadeOut;
+		animation-iteration-count: infinite;
+	}
+	
+	@keyframes snow {
+	    0% { transform: translate(0px, -32px); }
+	    100% { transform: translate(0px, 200px) rotate(180deg); }
+	}
+	
+	@keyframes swing {
+	    0%{ margin-left: 0; }
+	    33%{ margin-left: -50px; }
+	    66%{ margin-left: 50px; }
+	    100%{ margin-left: 0px; }
+	}
+	
+	@keyframes fadeOut {
+		0% { opacity: 1; }
+		80% { opacity: 1; }
+		100% { opacity: 0; }
+	}

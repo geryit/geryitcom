@@ -1,0 +1,13 @@
+body{font-family:Helvetica, Georgia, "Times New Roman", Times, serif;margin:10px;}
+div,ul,il,a,b{display:block;position:relative;padding:0;margin:0;font-weight:normal;border:none;font-size:12px;top:0;left:0;outline:none;list-style:none;}
+#menu_mask{float:left;width:200px;height:500px;overflow:hidden;background:#333333;margin-top:50px;padding:10px;-moz-box-shadow: 5px 5px 5px #ccc;-webkit-box-shadow: 5px 5px 5px #ccc;box-shadow: 5px 5px 5px #ccc;}
+#menu_mask ul{width:100%;float:left;margin-left:10px;}
+#menu_mask ul:first-child{margin-left:0;}
+#menu_mask ul li{float:left;width:100%;margin:1px 0;}
+#menu_mask ul li a{float:left;color:#cccccc;clear:both;outline:none;text-decoration:none;padding:5px 0 5px 20px;font-size:13px;}
+#menu_mask ul li a:hover{color:#999;}
+#menu_mask ul li a b{position:absolute;display:inline-block;width:15px;height:100%;text-align:center;}
+#menu_mask ul li a b.plus{background:url(../images/plus.png) no-repeat center;}
+#menu_mask ul li a b.minus{background:url(../images/minus.png) no-repeat center;}
+#menu_mask>ul>li>a{width:180px;background:#2b2b2b;font-size:15px;}
+#menu_mask ul li ul{display:none;}

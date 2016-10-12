@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+	<head>
+		<title>transitions</title>
+		<style>
+		
+		
+		ul{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		#nav{
+			overflow: hidden;
+		}
+		#nav>li{
+			float: left;
+		}
+		#nav ul{
+			position: absolute;
+			opacity: 0;
+			-webkit-transition:1s;
+			height: 0;
+			overflow: hidden;
+		}
+		
+		#nav li:hover ul{
+			opacity: 1;
+			height: 100px;
+		}
+		
+		#nav li:target ul{
+			opacity: 1;
+			height: 100%;
+		}
+		
+		a{
+			-webkit-transition:1s;
+		}
+		a:hover{
+			background: #ff0;
+		}
+		
+		#bg-stripes{
+			width:100px;
+			height:100px;
+			background-color: #fff;
+			background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.5, transparent), color-stop(0.5, rgba(200, 0, 0, 0.496094)), to(rgba(200, 0, 0, 0.496094))), -webkit-gradient(linear, 0 0, 100% 0, color-stop(0.5, transparent), color-stop(0.5, rgba(200, 0, 0, 0.496094)), to(rgba(200, 0, 0, 0.496094)));
+			background-size: 25%;
+		}
+		</style>
+	</head>
+	<body>
+		<ul id="nav">
+			<li id="menu1">
+				<a href="#menu1">Menu 1</a>
+				<ul><li><a href="">Sub 1</a></li><li><a href="">Sub 2</a></li><li><a href="">Sub 3</a></li></ul>
+			</li>
+			<li id="menu2">
+				<a href="#menu2">Menu 2</a>
+				<ul><li><a href="">Sub 1</a></li><li><a href="">Sub 2</a></li><li><a href="">Sub 3</a></li></ul>
+			</li>
+		</ul>
+		
+		<div id="bg-stripes"></div>
+	</body>
+</html>

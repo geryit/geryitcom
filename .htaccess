@@ -1,0 +1,11 @@
+RewriteEngine on
+
+RewriteRule ^home$  index.php?page=home [L]
+RewriteRule ^works$  index.php?page=works [L]
+RewriteRule ^code-samples$  index.php?page=code-samples [L]
+RewriteRule ^works/(.*) index.php?page=works&tag=$1 [L]
+RewriteRule ^info$  index.php?page=info [L]
+RewriteRule ^thanks$  index.php?page=thanks [L]
+RewriteRule ^contact$  index.php?page=contact [L]
+RedirectMatch 301 /blog/([0-9]+)/([0-9]+)/(.*)$ /blog/$3
+#Header always append X-Frame-Options SAMEORIGIN

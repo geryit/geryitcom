@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="follow, all" />
+		<meta name="language" content="en" />
+		<meta name="googlebot" content="index, follow" />
+		<meta name="revisit-after" content="20 days" />
+
+		<meta name="description" content="Goksel Eryigit is a Front-End and Web Application Developer based in Turkey." />
+		<meta name="content" content="You can find the work, blog and information about Goksel Eryigit here" />
+		<meta name="keywords" content="goksel eryigit, web developer, web development, front-end development, backend development, php, mysql, ruby, html, css, js, istanbul, turkey" />
+
+		<title>Canvas</title>
+		<style>
+			ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+			
+			li {
+				float: left;
+				margin: 0 10px 10px 0;
+			}
+			
+			img {
+				display: none;
+			} 
+			
+		</style>
+		<script src="jquery-1.4.3.min.js"></script>
+		<script>
+			
+			function draw(){
+				$("li").each(function(){
+					$(this).append("<canvas width='100' height='115' />");
+					var ctx = $("canvas", this)[0].getContext('2d');
+					ctx.drawImage($("img", this)[0], 0, 0);
+					ctx.drawImage($("#frame")[0], -3, -3, 108, 124);
+				})
+			}
+			
+			
+		</script>
+	</head>
+	<body onload="draw()">
+		<img id="frame" src="images/picture_frame.png" />
+		<ul>
+			<li>
+				<img src="images/gallery_1.jpg" />
+			</li>
+			<li>
+				<img src="images/gallery_2.jpg" />
+			</li>
+			<li>
+				<img src="images/gallery_3.jpg" />
+			</li>
+			<li>
+				<img src="images/gallery_4.jpg" />
+			</li>
+			<li>
+				<img src="images/gallery_5.jpg" />
+			</li>
+		</ul>
+	</body>
+</html>
