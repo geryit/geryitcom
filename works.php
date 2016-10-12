@@ -14,7 +14,7 @@
 				<p class="year">
 					<? echo $r['year']; ?>
 				</p>
-				<p class="ss" style="background:url(//d2g83xhm015jzr.cloudfront.net/geryitcom/images/works_full/<?=$r['img'];?>)">
+				<p class="ss" style="background:url(//d2g83xhm015jzr.cloudfront.net/images4/works_full/<?=$r['img'];?>)">
 					Image
 				</p>
 				<section class="innerMask">

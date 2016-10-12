@@ -59,8 +59,8 @@ $latest_work_id = 31;
 
 		<link rel="stylesheet" href="/css/styles.css?v=<?=time()?>" />
 		<link rel="shortcut icon" href="/favicon.ico?1" type="image/x-icon" />
-		<link rel="apple-touch-icon" href="//d2g83xhm015jzr.cloudfront.net/geryitcom/images/share.gif?1">
-		<link rel="image_src" href="//d2g83xhm015jzr.cloudfront.net/geryitcom/images/share.gif?1" />
+		<link rel="apple-touch-icon" href="//d2g83xhm015jzr.cloudfront.net/images4/share.gif?1">
+		<link rel="image_src" href="//d2g83xhm015jzr.cloudfront.net/images4/share.gif?1" />
 		<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->

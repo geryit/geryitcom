@@ -4,7 +4,7 @@
 	</h1>
 	<section id="shortInfo">
 		<h2 class="text1">
-			I am a 30 year old UI/UX Developer from Turkey
+			I am a 33 year old Front-end Developer from Turkey
 			<? /*of <a class="ud-green" href="http://twitter.com/udemy">@udemy</a><? */?>
 			and member of the <a href="https://twitter.com/awwwards"
 				class="aw-orange">@awwwards</a> Jury . Follow me on <a href="http://twitter.com/geryit" class="tw-blue">@geryit</a>
@@ -45,7 +45,7 @@
                         <count($files);$i++){
                         ?>
 						<img alt="latest-work-<?=$latest_work_id;?>"
-							src="//d2g83xhm015jzr.cloudfront.net/geryitcom/images/works-big/<?=$latest_work_id;?>/<?=$files[$i];?>" />
+							src="//d2g83xhm015jzr.cloudfront.net/images4/works-big/<?=$latest_work_id;?>/<?=$files[$i];?>" />
 						<? }?>
 					</div>
 					<p>
