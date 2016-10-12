@@ -165,7 +165,7 @@
 					| Proudly powered by <a href="http://www.wordpress.org">WordPress</a>.
 					<p>
 						<a href="http://www.w3.org/html/logo/">
-							<img src="/images/html5-logo.png" width="85" height="38" alt="HTML5 Powered with CSS3 / Styling and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
+							<img src="//d2g83xhm015jzr.cloudfront.net/images5/html5-logo.png" width="85" height="38" alt="HTML5 Powered with CSS3 / Styling and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
 						</a>
 					</p>
 				</section>

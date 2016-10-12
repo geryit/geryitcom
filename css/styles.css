@@ -135,7 +135,7 @@ q:after {
   content: none;
 }
 body {
-  background: #141414 url(//d2g83xhm015jzr.cloudfront.net/images4/generalBodyBg.png) repeat-x;
+  background: #141414 url(//d2g83xhm015jzr.cloudfront.net/images5/generalBodyBg.png) repeat-x;
   font-family: "DroidSerifRegular", "Georgia", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   color: #999999;
   line-height: 1.5em;
@@ -274,7 +274,7 @@ a.aw-orange:hover {
   left: 100%;
   top: 0;
   margin: 0 0 0 -69px;
-  background: url(//d2g83xhm015jzr.cloudfront.net/images4/sotd.png) no-repeat;
+  background: url(//d2g83xhm015jzr.cloudfront.net/images5/sotd.png) no-repeat;
   z-index: 2;
   text-indent: -999999px;
 }
@@ -314,11 +314,11 @@ a.aw-orange:hover {
   color: #ffffff;
 }
 #content {
-  background: url(//d2g83xhm015jzr.cloudfront.net/images4/generalHtmlBg.png);
+  background: url(//d2g83xhm015jzr.cloudfront.net/images5/generalHtmlBg.png);
   margin-top: 5px;
 }
 #light {
-  background: url(//d2g83xhm015jzr.cloudfront.net/images4/generalLight.png) no-repeat center top;
+  background: url(//d2g83xhm015jzr.cloudfront.net/images5/generalLight.png) no-repeat center top;
 }
 #contentWrapper {
   overflow: hidden;
@@ -327,7 +327,7 @@ a.aw-orange:hover {
   display: block;
   height: 130px;
   text-indent: -99999px;
-  background: url(//d2g83xhm015jzr.cloudfront.net/images4/titleBg.png) no-repeat;
+  background: url(//d2g83xhm015jzr.cloudfront.net/images5/titleBg.png) no-repeat;
 }
 #contentHeader {
   height: 154px;
@@ -335,7 +335,7 @@ a.aw-orange:hover {
 #logo {
   margin-top: 65px;
   height: 22px;
-  background-image: url(//d2g83xhm015jzr.cloudfront.net/images4/generalLogo.png);
+  background-image: url(//d2g83xhm015jzr.cloudfront.net/images5/generalLogo.png);
   float: left;
   width: 350px;
 }
@@ -361,11 +361,11 @@ a.aw-orange:hover {
   transition: all .3s ease;
 }
 #menu ul li p.p1 {
-  background: url(//d2g83xhm015jzr.cloudfront.net/images4/menuArr1.png) no-repeat;
+  background: url(//d2g83xhm015jzr.cloudfront.net/images5/menuArr1.png) no-repeat;
   background-position: 16px 0px;
 }
 #menu ul li p.p2 {
-  background: url(//d2g83xhm015jzr.cloudfront.net/images4/menuArr2.png) no-repeat;
+  background: url(//d2g83xhm015jzr.cloudfront.net/images5/menuArr2.png) no-repeat;
   background-position: -16px 0px;
 }
 #menu ul li a {
@@ -375,23 +375,23 @@ a.aw-orange:hover {
 }
 #menu ul li a#menuWorks {
   width: 36px;
-  background: url(//d2g83xhm015jzr.cloudfront.net/images4/menuWorks.png);
+  background: url(//d2g83xhm015jzr.cloudfront.net/images5/menuWorks.png);
 }
 #menu ul li a#menuCodeSamples {
   width: 87px;
-  background: url(//d2g83xhm015jzr.cloudfront.net/images4/menuCodeSamples.png);
+  background: url(//d2g83xhm015jzr.cloudfront.net/images5/menuCodeSamples.png);
 }
 #menu ul li a#menuInfo {
   width: 28px;
-  background: url(//d2g83xhm015jzr.cloudfront.net/images4/menuInfo.png);
+  background: url(//d2g83xhm015jzr.cloudfront.net/images5/menuInfo.png);
 }
 #menu ul li a#menuBlog {
   width: 31px;
-  background: url(//d2g83xhm015jzr.cloudfront.net/images4/menuBlog.png);
+  background: url(//d2g83xhm015jzr.cloudfront.net/images5/menuBlog.png);
 }
 #menu ul li a#menuContact {
   width: 56px;
-  background: url(//d2g83xhm015jzr.cloudfront.net/images4/menuContact.png);
+  background: url(//d2g83xhm015jzr.cloudfront.net/images5/menuContact.png);
 }
 #menu ul li:first-child {
   margin-left: 42px !important;
@@ -423,17 +423,17 @@ a.aw-orange:hover {
   margin-left: 7px;
 }
 #networks a#n1 {
-  background: url(//d2g83xhm015jzr.cloudfront.net/images4/networksLinkedin.png);
+  background: url(//d2g83xhm015jzr.cloudfront.net/images5/networksLinkedin.png);
 }
 #networks a#n2 {
-  background: url(//d2g83xhm015jzr.cloudfront.net/images4/networksFacebook.png);
+  background: url(//d2g83xhm015jzr.cloudfront.net/images5/networksFacebook.png);
 }
 #networks a#n3 {
-  background: url(//d2g83xhm015jzr.cloudfront.net/images4/networksTwitter.png);
+  background: url(//d2g83xhm015jzr.cloudfront.net/images5/networksTwitter.png);
   margin-left: 0;
 }
 #home h1 {
-  background: url(//d2g83xhm015jzr.cloudfront.net/images4/pageTitleHello.png) no-repeat;
+  background: url(//d2g83xhm015jzr.cloudfront.net/images5/pageTitleHello.png) no-repeat;
 }
 #home #shortInfo {
   margin-top: 35px;
@@ -459,7 +459,7 @@ a.aw-orange:hover {
 #home #shortInfo .text2 article #q1 {
   width: 62px;
   height: 55px;
-  background: url(//d2g83xhm015jzr.cloudfront.net/images4/quotes1.png) no-repeat;
+  background: url(//d2g83xhm015jzr.cloudfront.net/images5/quotes1.png) no-repeat;
   position: absolute;
   margin: -20px 0 0 0;
   display: block;
@@ -467,7 +467,7 @@ a.aw-orange:hover {
 #home #shortInfo .text2 article #q2 {
   width: 45px;
   height: 40px;
-  background: url(//d2g83xhm015jzr.cloudfront.net/images4/quotes2.png) no-repeat;
+  background: url(//d2g83xhm015jzr.cloudfront.net/images5/quotes2.png) no-repeat;
   position: absolute;
   margin: 17px 0 0 12px;
 }
@@ -487,7 +487,7 @@ a.aw-orange:hover {
   overflow: hidden;
 }
 #home #twitterAndBlog #twitterPost {
-  background: url(//d2g83xhm015jzr.cloudfront.net/images4/iconTwitter.png) no-repeat 5px 0px;
+  background: url(//d2g83xhm015jzr.cloudfront.net/images5/iconTwitter.png) no-repeat 5px 0px;
   font-style: italic;
   line-height: 18px;
   float: left;
@@ -517,7 +517,7 @@ a.aw-orange:hover {
   color: #ffffff;
 }
 #home #twitterAndBlog #blogPosts {
-  background: url(//d2g83xhm015jzr.cloudfront.net/images4/iconBalloon.png) no-repeat 30px 0px;
+  background: url(//d2g83xhm015jzr.cloudfront.net/images5/iconBalloon.png) no-repeat 30px 0px;
   font-size: 11px;
   color: #666666;
   line-height: 18px;
@@ -605,7 +605,7 @@ a.aw-orange:hover {
   font-size: 13px;
 }
 #works h1 {
-  background: url(//d2g83xhm015jzr.cloudfront.net/images4/pageTitleWorks.png) no-repeat;
+  background: url(//d2g83xhm015jzr.cloudfront.net/images5/pageTitleWorks.png) no-repeat;
 }
 #works #workList > article {
   float: left;
@@ -616,7 +616,7 @@ a.aw-orange:hover {
 #works #workList > article .mask {
   position: relative;
   height: 282px;
-  background: url(//d2g83xhm015jzr.cloudfront.net/images4/workBg.png);
+  background: url(//d2g83xhm015jzr.cloudfront.net/images5/workBg.png);
   border: 1px solid #000000;
   overflow: hidden;
 }
@@ -678,7 +678,7 @@ a.aw-orange:hover {
   margin-top: 240px;
   font-size: 14px;
   text-decoration: none;
-  background: url(//d2g83xhm015jzr.cloudfront.net/images4/workArrow.png) no-repeat 60px 7px;
+  background: url(//d2g83xhm015jzr.cloudfront.net/images5/workArrow.png) no-repeat 60px 7px;
   width: 100px;
   color: #ffcc00;
 }
@@ -725,7 +725,7 @@ a.aw-orange:hover {
   margin-right: 0;
 }
 #code-samples h1 {
-  background: url(//d2g83xhm015jzr.cloudfront.net/images4/pageTitleCodeSamples.png) no-repeat;
+  background: url(//d2g83xhm015jzr.cloudfront.net/images5/pageTitleCodeSamples.png) no-repeat;
 }
 #code-samples ul {
   width: 100%;
@@ -787,7 +787,7 @@ a.aw-orange:hover {
   margin-right: 10px;
 }
 #info h1 {
-  background: url(//d2g83xhm015jzr.cloudfront.net/images4/pageTitleInfo.png) no-repeat;
+  background: url(//d2g83xhm015jzr.cloudfront.net/images5/pageTitleInfo.png) no-repeat;
 }
 #info .hi {
   margin-top: 40px;
@@ -838,7 +838,7 @@ a.aw-orange:hover {
   width: 483px;
   height: 0px;
   margin: -20px 0 0 -60px;
-  background: url(//d2g83xhm015jzr.cloudfront.net/images4/infoArr.png) no-repeat;
+  background: url(//d2g83xhm015jzr.cloudfront.net/images5/infoArr.png) no-repeat;
   text-indent: -99999px;
   z-index: 0;
 }
@@ -846,15 +846,15 @@ a.aw-orange:hover {
   width: 113px;
   height: 60px;
   margin: 40px 0;
-  background: url(//d2g83xhm015jzr.cloudfront.net/images4/infoCv.png);
+  background: url(//d2g83xhm015jzr.cloudfront.net/images5/infoCv.png);
 }
 #blog h1 {
   height: 130px;
-  background: url(//d2g83xhm015jzr.cloudfront.net/images4/pageTitleBlog.png) no-repeat;
+  background: url(//d2g83xhm015jzr.cloudfront.net/images5/pageTitleBlog.png) no-repeat;
   text-indent: -99999px;
 }
 #contact h1 {
-  background: url(//d2g83xhm015jzr.cloudfront.net/images4/pageTitleContact.png) no-repeat;
+  background: url(//d2g83xhm015jzr.cloudfront.net/images5/pageTitleContact.png) no-repeat;
 }
 #contact h2 {
   font-size: 30px;
@@ -879,7 +879,7 @@ a.aw-orange:hover {
   height: 27px;
   position: absolute;
   margin: -2px 0 0 5px;
-  background: url(//d2g83xhm015jzr.cloudfront.net/images4/contactSkypeChat.png) no-repeat;
+  background: url(//d2g83xhm015jzr.cloudfront.net/images5/contactSkypeChat.png) no-repeat;
   text-indent: -99999px;
   display: inline;
 }
@@ -910,7 +910,7 @@ a.aw-orange:hover {
   top: 0;
   width: 185px;
   height: 42px;
-  background: url(//d2g83xhm015jzr.cloudfront.net/images4/contactBalloon.png) no-repeat;
+  background: url(//d2g83xhm015jzr.cloudfront.net/images5/contactBalloon.png) no-repeat;
   color: #ffffff;
   text-indent: 10px;
   line-height: 30px;
@@ -941,7 +941,7 @@ a.aw-orange:hover {
 #contact .more .form form .sendRow #loader {
   width: 16px;
   height: 16px;
-  background: url(//d2g83xhm015jzr.cloudfront.net/images4/contactLoader.gif) no-repeat;
+  background: url(//d2g83xhm015jzr.cloudfront.net/images5/contactLoader.gif) no-repeat;
   text-indent: -99999px;
   float: right;
   margin: 3px 5px 0 0;
@@ -953,7 +953,7 @@ a.aw-orange:hover {
 #contact .more .form form .submit {
   width: 59px;
   height: 19px;
-  background: url(//d2g83xhm015jzr.cloudfront.net/images4/contactSubmit.png);
+  background: url(//d2g83xhm015jzr.cloudfront.net/images5/contactSubmit.png);
   display: block;
   float: right;
   margin: 0px 10px 0 0;
@@ -968,7 +968,7 @@ a.aw-orange:hover {
   width: 131px;
   height: 48px;
   margin-left: 20px;
-  background: url(//d2g83xhm015jzr.cloudfront.net/images4/contactVcard.png) no-repeat;
+  background: url(//d2g83xhm015jzr.cloudfront.net/images5/contactVcard.png) no-repeat;
   margin-top: 20px;
 }
 #footer {
@@ -991,7 +991,7 @@ a.aw-orange:hover {
   display: block;
   width: 94px;
   height: 12px;
-  background: url(//d2g83xhm015jzr.cloudfront.net/images4/iconRss.png) no-repeat right;
+  background: url(//d2g83xhm015jzr.cloudfront.net/images5/iconRss.png) no-repeat right;
   float: right;
   font-size: 9px;
   color: #666666;
@@ -1027,7 +1027,7 @@ a.aw-orange:hover {
     background: none;
   }
   #logo {
-    background-image: url(//d2g83xhm015jzr.cloudfront.net/images4/generalLogo-retina.png);
+    background-image: url(//d2g83xhm015jzr.cloudfront.net/images5/generalLogo-retina.png);
     display: block;
     float: none;
     height: 17px;

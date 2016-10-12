@@ -57,13 +57,9 @@ $latest_work_id = 31;
 		<meta name="description" content="<?=$des;?>" />
 		<meta name="author" content="Goksel Eryigit">
 
-		<link rel="stylesheet" href="/css/styles.css?v=<?=time()?>" />
 		<link rel="shortcut icon" href="/favicon.ico?1" type="image/x-icon" />
-		<link rel="apple-touch-icon" href="//d2g83xhm015jzr.cloudfront.net/images4/share.gif?1">
-		<link rel="image_src" href="//d2g83xhm015jzr.cloudfront.net/images4/share.gif?1" />
-		<!--[if lt IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
+		<link rel="apple-touch-icon" href="//d2g83xhm015jzr.cloudfront.net/images5/share.gif?1">
+		<link rel="image_src" href="//d2g83xhm015jzr.cloudfront.net/images5/share.gif?1" />
 
 
 	</head>
@@ -117,9 +113,7 @@ $latest_work_id = 31;
 				</aside>
 			</div>
 		</footer>
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-		<script type="text/javascript" src="/js/jquery.cycle.lite.min.js"></script>
-		<script type="text/javascript" src="/js/scripts.php"></script>
+
 
 		<?
 		if ($_GET["tag"]) {
@@ -145,5 +139,11 @@ $latest_work_id = 31;
 				s.parentNode.insertBefore(ga, s);
 			})();
 		</script>
+        <!-- W3TC-include-css -->
+        <!-- W3TC-include-js -->
+        <link rel="stylesheet" href="/css/styles.css" />
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script type="text/javascript" src="/js/jquery.cycle.lite.min.js"></script>
+        <script type="text/javascript" src="/js/scripts.php"></script>
 	</body>
 </html>

@@ -5,7 +5,7 @@
 		<span>Phone:</span>
 		+90 (532) 581-9818 &nbsp;&nbsp;/&nbsp;&nbsp; <span>Skype:</span>
 		<a id="chat" class="rotating" href="skype:goksel.eryigit?chat">Chat with me</a>
-		<img src="//d2g83xhm015jzr.cloudfront.net/images4/pixel.gif" width="110" height="1" />/&nbsp;&nbsp; <span>e-mail</span>: <a href="mailto:hello@geryit.com">hello@geryit.com</a>&nbsp;&nbsp; / &nbsp;&nbsp;twitter: <a href="https://twitter.com/geryit" style="color:#3ecfff;">@geryit</a>
+		<img src="//d2g83xhm015jzr.cloudfront.net/images5/pixel.gif" width="110" height="1" />/&nbsp;&nbsp; <span>e-mail</span>: <a href="mailto:hello@geryit.com">hello@geryit.com</a>&nbsp;&nbsp; / &nbsp;&nbsp;twitter: <a href="https://twitter.com/geryit" style="color:#3ecfff;">@geryit</a>
 	</div>
 	<section class="more">
 		<section class="form grid_8 alpha">
