@@ -61,9 +61,19 @@ $latest_work_id = 31;
 		<link rel="apple-touch-icon" href="//d2g83xhm015jzr.cloudfront.net/images5/share.gif?1">
 		<link rel="image_src" href="//d2g83xhm015jzr.cloudfront.net/images5/share.gif?1" />
 
-
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-TX79MN');</script>
+    <!-- End Google Tag Manager -->
 	</head>
 	<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TX79MN"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 		<iframe id="getSite" src="/loading.php"></iframe>
 		<div id="content">
 			<div id="light">
@@ -126,24 +136,15 @@ $latest_work_id = 31;
 			})
 		</script>
 		<? } ?>
-		<script type="text/javascript">
-			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', 'UA-3174937-18']);
-			_gaq.push(['_trackPageview']);
-			(function(){
-				var ga = document.createElement('script');
-				ga.type = 'text/javascript';
-				ga.async = true;
-				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-				var s = document.getElementsByTagName('script')[0];
-				s.parentNode.insertBefore(ga, s);
-			})();
-		</script>
-        <!-- W3TC-include-css -->
-        <!-- W3TC-include-js -->
+
         <link rel="stylesheet" href="/css/styles.css" />
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
         <script type="text/javascript" src="/js/jquery.cycle.lite.min.js"></script>
         <script type="text/javascript" src="/js/scripts.php"></script>
+
+    <!-- W3TC-include-js -->
+    <!-- W3TC-include-css -->
 	</body>
 </html>
+
+
