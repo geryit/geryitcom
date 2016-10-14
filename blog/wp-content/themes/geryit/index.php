@@ -2,8 +2,6 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
-
 
 		<title>sdfsdf<?php bloginfo('name'); ?><?php wp_title('&raquo;', true, 'left'); ?></title>
 		<meta name="author" content="Goksel Eryigit">
@@ -174,6 +172,7 @@
 				</aside>
 			</div>
 		</footer>
+
 		<?php wp_footer(); ?>
 
 
@@ -181,7 +180,8 @@
 			var sd = "<?php bloginfo('stylesheet_directory'); ?>";
 		</script>
 
-
+        <!-- W3TC-include-js -->
+        <!-- W3TC-include-css -->
 	</body>
 </html>
 

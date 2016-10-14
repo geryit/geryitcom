@@ -138,7 +138,7 @@ $latest_work_id = 31;
 		<? } ?>
 
         <link rel="stylesheet" href="/css/styles.css" />
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
         <script type="text/javascript" src="/js/jquery.cycle.lite.min.js"></script>
         <script type="text/javascript" src="/js/scripts.php"></script>
 

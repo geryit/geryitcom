@@ -7,7 +7,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
     vertical-align: baseline
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure, footer, header, menu, nav, section {
     display: block
 }
 
@@ -298,8 +298,7 @@ button {
 }
 
 body {
-    background: #141414 url(//d2g83xhm015jzr.cloudfront.net/images5/generalBodyBg.png) repeat-x;
-    font: 14px/1.5em "Droid Serif", sans-serif;
+    font-family: 'Abhaya Libre', serif;
     color: #999
 }
 
@@ -360,7 +359,6 @@ h2, h3 {
 }
 
 input, select, textarea {
-    font: 14px/22px "DroidSerifRegular", "Georgia", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-size: 14px;
     color: #666;
     background: #000;
@@ -425,7 +423,7 @@ pre {
     background: url(//d2g83xhm015jzr.cloudfront.net/images5/sotd.png) no-repeat;
     z-index: 2;
     text-indent: -999999px;
-    display: none
+    display: none;
 }
 
 #content {
@@ -1146,25 +1144,6 @@ pre {
     font-size: 16px !important
 }
 
-.syntaxhighlighter .line.alt2 {
-    background-color: rgba(255, 255, 255, 0.02) !important
-}
-
-.syntaxhighlighter {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    clear: both
-}
-
-.syntaxhighlighter table caption {
-    font-size: 17px !important;
-    padding-top: 0 !important
-}
-
-ol li .syntaxhighlighter {
-    position: relative;
-    top: -30px
-}
 
 pre[class^=brush] {
     clear: both;
