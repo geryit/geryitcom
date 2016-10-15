@@ -1,5 +1,4 @@
 $( document ).ready(function() {
-
     $(".rotating").prepend("<span />").each(function () {
 
         var img = $(this).css("background-image");
