@@ -137,10 +137,10 @@ $latest_work_id = 31;
 		</script>
 		<? } ?>
 
-        <link rel="stylesheet" href="/css/styles.css" />
-        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-        <script type="text/javascript" src="/js/jquery.cycle.lite.min.js"></script>
-        <script type="text/javascript" src="/js/scripts.php"></script>
+        <link rel="stylesheet" href="/css/styles.css?<?=time()?>" />
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?<?=time()?>"></script>
+        <script type="text/javascript" src="/js/jquery.cycle.lite.min.js?<?=time()?>"></script>
+        <script type="text/javascript" src="/js/custom.js?<?=time()?>"></script>
 
     <!-- W3TC-include-js -->
     <!-- W3TC-include-css -->

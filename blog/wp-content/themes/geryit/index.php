@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>sdfsdf<?php bloginfo('name'); ?><?php wp_title('&raquo;', true, 'left'); ?></title>
+		<title><?php bloginfo('name'); ?><?php wp_title('&raquo;', true, 'left'); ?></title>
 		<meta name="author" content="Goksel Eryigit">
 
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
