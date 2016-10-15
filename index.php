@@ -57,7 +57,7 @@ $latest_work_id = 31;
 		<meta name="description" content="<?=$des;?>" />
 		<meta name="author" content="Goksel Eryigit">
 
-		<link rel="shortcut icon" href="/favicon.ico?1" type="image/x-icon" />
+		<link rel="shortcut icon" href="//d2g83xhm015jzr.cloudfront.net/favicon.ico" type="image/x-icon" />
 		<link rel="apple-touch-icon" href="//d2g83xhm015jzr.cloudfront.net/images5/share.gif?1">
 		<link rel="image_src" href="//d2g83xhm015jzr.cloudfront.net/images5/share.gif?1" />
 
@@ -137,10 +137,8 @@ $latest_work_id = 31;
 		</script>
 		<? } ?>
 
-        <link rel="stylesheet" href="/css/styles.css?<?=time()?>" />
-        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?<?=time()?>"></script>
-        <script type="text/javascript" src="/js/jquery.cycle.lite.min.js?<?=time()?>"></script>
-        <script type="text/javascript" src="/js/custom.js?<?=time()?>"></script>
+        <link rel="stylesheet" href="//d2g83xhm015jzr.cloudfront.net/css/styles.css.gzip?v=7511" />
+        <script type="text/javascript" src="//d2g83xhm015jzr.cloudfront.net/js/scripts.js.gzip?v=7511"></script>
 
     <!-- W3TC-include-js -->
     <!-- W3TC-include-css -->

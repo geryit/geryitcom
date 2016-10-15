@@ -71,7 +71,7 @@
 										$first_img = $html->find('img');
 										$src = $first_img[0]->src;
 
-										if (!$src) $src = "/images/cats_general.png";
+										if (!$src) $src = "//d2g83xhm015jzr.cloudfront.net/images/cats_general.png";
 										if ($thumb != ""){
 											echo $thumb;
 										}else{?>

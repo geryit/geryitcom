@@ -17,4 +17,7 @@ Gruntfile.js
 .editorconfig
 rsync_exclude.txt
 rsync_include.txt
-
+*.less
+js/*.js
+.aws.json
+package.json
