@@ -10,7 +10,6 @@
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-less": "^1.4.0",
     "grunt-contrib-uglify": "^2.0.0",
-    "grunt-inline-css": "^0.1.5",
     "grunt-newer": "^1.2.0",
     "grunt-regex-replace": "^0.3.0",
     "grunt-rsync": "^2.0.0",

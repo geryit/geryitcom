@@ -137,11 +137,8 @@ $latest_work_id = 31;
 		</script>
 		<? } ?>
 
-        <link rel="stylesheet" href="//d2g83xhm015jzr.cloudfront.net/dist/styles.min.css?v=4886" />
-        <script src="//d2g83xhm015jzr.cloudfront.net/dist/scripts.min.js?v=4886"></script>
-
-    <!-- W3TC-include-js -->
-    <!-- W3TC-include-css -->
+        <link rel="stylesheet" href="//d2g83xhm015jzr.cloudfront.net/dist/styles.min.css.gzip?v=9369"  media="none" onload="if(media!='all')media='all'"/>
+        <script async src="//d2g83xhm015jzr.cloudfront.net/dist/scripts.min.js.gzip?v=9369"></script>
 	</body>
 </html>
 

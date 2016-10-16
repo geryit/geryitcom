@@ -23,7 +23,7 @@ module.exports = function (grunt) {
                     },
                     {
                         name: 'find specific strings and add version',
-                        search: /(styles.min.css|scripts.min.js)/g,
+                        search: /(styles.min.css.gzip|scripts.min.js.gzip)/g,
                         replace: function (arg1) {
                             if (arg1) return arg1 + '?v=' + fourDigits;
                         }
@@ -70,23 +70,23 @@ module.exports = function (grunt) {
             }
         },
 
-        //
-        // compress: {
-        //     options: {
-        //         mode: 'gzip'
-        //     },
-        //     production: {
-        //         files: [{
-        //             expand: true,
-        //             cwd: './',
-        //             src: ['**/ge_styles.min.css', '**/ge_scripts.min.js'],
-        //             dest: './',
-        //             rename: function (dest, src) {
-        //                 return dest + '/' + src + '.gzip';
-        //             }
-        //         }]
-        //     }
-        // },
+
+        compress: {
+            options: {
+                mode: 'gzip'
+            },
+            production: {
+                files: [{
+                    expand: true,
+                    cwd: 'dist/',
+                    src: ['*.*'],
+                    dest: 'dist/',
+                    rename: function (dest, src) {
+                        return dest + '/' + src + '.gzip';
+                    }
+                }]
+            }
+        },
 
         aws: grunt.file.readJSON('.aws.json'), // Read the file
 
@@ -101,14 +101,27 @@ module.exports = function (grunt) {
                 differential: true,
                 params: {
                     CacheControl: 'public, max-age=31536000',
-                    // ContentEncoding: 'gzip', // applies to all the files!
-                    // ContentType: 'text/css',
+                    ContentEncoding: 'gzip', // applies to all the files!
                     Expires: new Date(new Date().setFullYear(new Date().getFullYear() + 1))
                 }
             },
             production: {
                 files: [{
-                    expand: true, cwd: 'dist/', src: ['**'], dest: 'dist/'
+                    expand: true,
+                    cwd: 'dist/',
+                    src: ['*.css.gzip'],
+                    dest: 'dist/',
+                    params: {
+                        ContentType: 'text/css'
+                    }
+                },{
+                    expand: true,
+                    cwd: 'dist/',
+                    src: ['*.js.gzip'],
+                    dest: 'dist/',
+                    params: {
+                        ContentType: 'application/javascript'
+                    }
                 }]
             }
         },
