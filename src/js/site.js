@@ -225,9 +225,9 @@ var geryit = {
             /* End get posts from blog */
             /*End JSON */
         }
-        $('#cycle_slide').cycle({
-            fx: 'fade'
-        });
+        // $('#cycle_slide').cycle({
+        //     fx: 'fade'
+        // });
     }
     ,
     /* convert to link for twitter widget*/

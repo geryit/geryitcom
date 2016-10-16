@@ -1,4 +1,17 @@
 RewriteEngine on
+ModPagespeed on
+
+# 1 month (1000 miliseconds=1sec)
+ModPagespeedImplicitCacheTtlMs 2592000000
+
+ModPagespeedEnableFilters collapse_whitespace,convert_meta_tags,elide_attributes,extend_cache,pedantic,remove_comments,remove_quotes
+
+ModPagespeedEnableFilters combine_javascript,canonicalize_javascript_libraries,rewrite_javascript,defer_javascript,inline_javascript
+#ModPagespeedJsInlineMaxBytes 100000000
+
+ModPagespeedEnableFilters prioritize_critical_css
+ModPagespeedCssInlineMaxBytes 100000000
+
 
 RewriteRule ^home$  index.php?page=home [L]
 RewriteRule ^works$  index.php?page=works [L]
@@ -9,38 +22,38 @@ RewriteRule ^thanks$  index.php?page=thanks [L]
 RewriteRule ^contact$  index.php?page=contact [L]
 RedirectMatch 301 /blog/([0-9]+)/([0-9]+)/(.*)$ /blog/$3
 #Header always append X-Frame-Options SAMEORIGIN
-
-# BEGIN GZIP
-<IfModule mod_deflate.c>
- AddOutputFilterByType DEFLATE text/html text/xml text/css text/plain
- AddOutputFilterByType DEFLATE image/svg+xml application/xhtml+xml application/xml
- AddOutputFilterByType DEFLATE application/rdf+xml application/rss+xml application/atom+xml
- AddOutputFilterByType DEFLATE text/javascript application/javascript application/x-javascript
- AddOutputFilterByType DEFLATE application/x-font-ttf application/x-font-otf
- AddOutputFilterByType DEFLATE font/truetype font/opentype
-</IfModule>
-# END GZIP
-
-# TN Expires Caching Start #
-<IfModule mod_expires.c>
-ExpiresActive On
-ExpiresByType text/css "access 1 month"
-ExpiresByType text/html "access 1 month"
-ExpiresByType image/gif "access 1 year"
-ExpiresByType image/png "access 1 year"
-ExpiresByType image/jpg "access 1 year"
-ExpiresByType image/jpeg "access 1 year"
-ExpiresByType image/x-icon "access 1 year"
-ExpiresByType application/pdf "access 1 month"
-ExpiresByType application/javascript "access 1 month"
-ExpiresByType text/x-javascript "access 1 month"
-ExpiresByType application/x-shockwave-flash "access 1 month"
-ExpiresByType application/vnd.ms-fontobject "access plus 1 year"
-ExpiresByType application/x-font-ttf "access plus 1 year"
-ExpiresByType application/x-font-opentype "access plus 1 year"
-ExpiresByType application/x-font-woff "access plus 1 year"
-ExpiresByType image/svg+xml "access plus 1 year"
-ExpiresDefault "access 1 month"
-</IfModule>
-
-# TN Expires Caching End #
+#
+## BEGIN GZIP
+#<IfModule mod_deflate.c>
+# AddOutputFilterByType DEFLATE text/html text/xml text/css text/plain
+# AddOutputFilterByType DEFLATE image/svg+xml application/xhtml+xml application/xml
+# AddOutputFilterByType DEFLATE application/rdf+xml application/rss+xml application/atom+xml
+# AddOutputFilterByType DEFLATE text/javascript application/javascript application/x-javascript
+# AddOutputFilterByType DEFLATE application/x-font-ttf application/x-font-otf
+# AddOutputFilterByType DEFLATE font/truetype font/opentype
+#</IfModule>
+## END GZIP
+#
+## TN Expires Caching Start #
+#<IfModule mod_expires.c>
+#ExpiresActive On
+#ExpiresByType text/css "access 1 month"
+#ExpiresByType text/html "access 1 month"
+#ExpiresByType image/gif "access 1 year"
+#ExpiresByType image/png "access 1 year"
+#ExpiresByType image/jpg "access 1 year"
+#ExpiresByType image/jpeg "access 1 year"
+#ExpiresByType image/x-icon "access 1 year"
+#ExpiresByType application/pdf "access 1 month"
+#ExpiresByType application/javascript "access 1 month"
+#ExpiresByType text/x-javascript "access 1 month"
+#ExpiresByType application/x-shockwave-flash "access 1 month"
+#ExpiresByType application/vnd.ms-fontobject "access plus 1 year"
+#ExpiresByType application/x-font-ttf "access plus 1 year"
+#ExpiresByType application/x-font-opentype "access plus 1 year"
+#ExpiresByType application/x-font-woff "access plus 1 year"
+#ExpiresByType image/svg+xml "access plus 1 year"
+#ExpiresDefault "access 1 month"
+#</IfModule>
+#
+## TN Expires Caching End #

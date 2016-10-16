@@ -60,8 +60,10 @@ $latest_work_id = 31;
 
     <link rel="shortcut icon" href="//d2g83xhm015jzr.cloudfront.net/favicon.ico"
           type="image/x-icon"/>
-    <link rel="apple-touch-icon" href="//d2g83xhm015jzr.cloudfront.net/images/share.gif?1">
-    <link rel="image_src" href="//d2g83xhm015jzr.cloudfront.net/images/share.gif?1"/>
+    <link rel="apple-touch-icon" href="//d2g83xhm015jzr.cloudfront.net/images/share.gif">
+    <link rel="image_src" href="//d2g83xhm015jzr.cloudfront.net/images/share.gif"/>
+
+    <link rel="stylesheet" type="text/css" href="dist/styles.min.css"/>
 
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
@@ -77,6 +79,7 @@ $latest_work_id = 31;
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-TX79MN');</script>
     <!-- End Google Tag Manager -->
+
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -157,26 +160,7 @@ if ($_GET["tag"]) {
 
 
 
-
-<script async src="//d2g83xhm015jzr.cloudfront.net/dist/scripts.min.js.gzip?v=7955"></script>
-
-<noscript id="deferred-styles">
-    <link rel="stylesheet" type="text/css"
-          href="//d2g83xhm015jzr.cloudfront.net/dist/styles.min.css.gzip?v=7955"/>
-</noscript>
-<script>
-    var loadDeferredStyles = function() {
-        var addStylesNode = document.getElementById("deferred-styles");
-        var replacement = document.createElement("div");
-        replacement.innerHTML = addStylesNode.textContent;
-        document.body.appendChild(replacement)
-        addStylesNode.parentElement.removeChild(addStylesNode);
-    };
-    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-        webkitRequestAnimationFrame || msRequestAnimationFrame;
-    if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
-    else window.addEventListener('load', loadDeferredStyles);
-</script>
+<script src="dist/scripts.min.js"></script>
 </body>
 </html>
 

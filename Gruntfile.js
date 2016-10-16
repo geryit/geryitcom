@@ -6,31 +6,31 @@ module.exports = function (grunt) {
     grunt.initConfig({
 
 
-        'regex-replace': {
-
-            assets: {
-                //specify a target with any name
-                src: [
-                    'index.php',
-                    'blog/wp-content/themes/geryit/functions.php',
-                    'src/less/*.less'
-                ],
-                actions: [
-                    {
-                        name: 'remove version with strings ?1111 ',
-                        search: /\?v=\d\d\d\d/g,
-                        replace: ''
-                    },
-                    {
-                        name: 'find specific strings and add version',
-                        search: /(styles.min.css.gzip|scripts.min.js.gzip)/g,
-                        replace: function (arg1) {
-                            if (arg1) return arg1 + '?v=' + fourDigits;
-                        }
-                    }
-                ]
-            }
-        },
+        // 'regex-replace': {
+        //
+        //     assets: {
+        //         //specify a target with any name
+        //         src: [
+        //             'index.php',
+        //             'blog/wp-content/themes/geryit/functions.php',
+        //             'src/less/*.less'
+        //         ],
+        //         actions: [
+        //             {
+        //                 name: 'remove version with strings ?1111 ',
+        //                 search: /\?v=\d\d\d\d/g,
+        //                 replace: ''
+        //             },
+        //             {
+        //                 name: 'find specific strings and add version',
+        //                 search: /(styles.min.css|scripts.min.js)/g,
+        //                 replace: function (arg1) {
+        //                     if (arg1) return arg1 + '?v=' + fourDigits;
+        //                 }
+        //             }
+        //         ]
+        //     }
+        // },
 
 
         less: {
@@ -60,71 +60,61 @@ module.exports = function (grunt) {
             }
         },
 
-        inlinecss: {
-            main: {
-                options: {
-                },
-                files: {
-                    'out.html': 'in.html'
-                }
-            }
-        },
 
+        // compress: {
+        //     options: {
+        //         mode: 'gzip'
+        //     },
+        //     production: {
+        //         files: [{
+        //             expand: true,
+        //             cwd: 'dist/',
+        //             src: ['*.css','*.js'],
+        //             dest: 'dist/',
+        //             rename: function (dest, src) {
+        //                 return dest + '/' + src + '.gzip';
+        //             }
+        //         }]
+        //     }
+        // },
 
-        compress: {
-            options: {
-                mode: 'gzip'
-            },
-            production: {
-                files: [{
-                    expand: true,
-                    cwd: 'dist/',
-                    src: ['*.css','*.js'],
-                    dest: 'dist/',
-                    rename: function (dest, src) {
-                        return dest + '/' + src + '.gzip';
-                    }
-                }]
-            }
-        },
-
-        aws: grunt.file.readJSON('.aws.json'), // Read the file
-
-        aws_s3: {
-            options: {
-                accessKeyId: "<%= aws.AWSAccessKeyId %>",
-                secretAccessKey: "<%= aws.AWSSecretKey %>",
-                region: '<%= aws.AWSRegion %>',
-                bucket: '<%= aws.AWSBucket %>',
-                uploadConcurrency: 5, // 5 simultaneous uploads
-                downloadConcurrency: 5, // 5 simultaneous downloads,
-                differential: true,
-                params: {
-                    CacheControl: 'public, max-age=31536000',
-                    ContentEncoding: 'gzip', // applies to all the files!
-                    Expires: new Date(new Date().setFullYear(new Date().getFullYear() + 1))
-                }
-            },
-            production: {
-                files: [{
-                    expand: true,
-                    cwd: 'dist/',
-                    src: ['*.css.gzip'],
-                    dest: 'dist/',
-                    params: {
-                        ContentType: 'text/css'
-                    }
-                },{
-                    expand: true,
-                    cwd: 'dist/',
-                    src: ['*.js.gzip'],
-                    dest: 'dist/',
-                    params: {
-                        ContentType: 'application/javascript'
-                    }
-                }]
-            }
-        },
+        // aws: grunt.file.readJSON('.aws.json'), // Read the file
+        //
+        // aws_s3: {
+        //     options: {
+        //         accessKeyId: "<%= aws.AWSAccessKeyId %>",
+        //         secretAccessKey: "<%= aws.AWSSecretKey %>",
+        //         region: '<%= aws.AWSRegion %>',
+        //         bucket: '<%= aws.AWSBucket %>',
+        //         uploadConcurrency: 5, // 5 simultaneous uploads
+        //         downloadConcurrency: 5, // 5 simultaneous downloads,
+        //         differential: true,
+        //         params: {
+        //             CacheControl: 'public, max-age=31536000',
+        //             ContentEncoding: '', // applies to all the files!
+        //             Expires: new Date(new Date().setFullYear(new Date().getFullYear() + 1))
+        //         }
+        //     },
+        //     production: {
+        //         files: [{
+        //             expand: true,
+        //             cwd: 'dist/',
+        //             src: ['styles.*'],
+        //             dest: 'dist/',
+        //             params: {
+        //                 ContentType: 'text/css'
+        //             }
+        //         },{
+        //             expand: true,
+        //             cwd: 'dist/',
+        //             src: ['scripts.*'],
+        //             dest: 'dist/',
+        //             params: {
+        //                 ContentType: 'application/javascript'
+        //             }
+        //         }]
+        //     }
+        // },
 
         rsync: {
             options: {
@@ -140,10 +130,15 @@ module.exports = function (grunt) {
         }
     });
     grunt.registerTask('default', ['less']);
-    grunt.registerTask('build', ['regex-replace', 'less', 'newer:uglify', 'newer:compress']);
+    grunt.registerTask('build', [
+        // 'regex-replace',
+        'less',
+        'newer:uglify',
+        // 'newer:compress'
+    ]);
     grunt.registerTask('deploy', [
         'build',
-        'aws_s3',
+        // 'aws_s3',
         'rsync'
     ]);
 };
