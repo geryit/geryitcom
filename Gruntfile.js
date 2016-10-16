@@ -35,17 +35,22 @@ module.exports = function (grunt) {
 
 
         less: {
+            options: {
+                plugins: [
+                    new (require('less-plugin-autoprefix'))({browsers: ["last 2 versions"]}),
+                    new (require('less-plugin-clean-css'))()
+                ]
+            },
             production: {
-                options: {
-                    plugins: [
-                        new (require('less-plugin-autoprefix'))({browsers: ["last 2 versions"]}),
-                        new (require('less-plugin-clean-css'))()
-                    ]
-                },
-                files: {
-                    'css/styles.css': 'css/styles.less',
-                    'blog/wp-content/themes/geryit/css/styles.css': 'blog/wp-content/themes/geryit/css/styles.less'
-                }
+                files: [
+                    {
+                        expand: true,
+                        cwd: './',
+                        src: ['**/styles.less'],
+                        dest: './',
+                        ext: ".css"
+                    }
+                ]
             }
         },
 
@@ -64,16 +69,16 @@ module.exports = function (grunt) {
         },
 
         uglify: {
-            js: {
-                files: {
-                    'js/scripts.min.js': [
-                        'js/scripts.js'
-                    ],
-                    'blog/wp-content/themes/geryit/js/scripts.min.js': [
-                        'blog/wp-content/themes/geryit/js/scripts.js'
-                    ]
-
-                }
+            production: {
+                files: [
+                    {
+                        expand: true,
+                        cwd: './',
+                        src: ['**/styles.less'],
+                        dest: './',
+                        ext: ".css"
+                    }
+                ]
             }
         },
 
@@ -81,13 +86,16 @@ module.exports = function (grunt) {
             options: {
                 mode: 'gzip'
             },
-            assets: {
-                files: {
-                    'css/styles.css.gzip': ['css/styles.css'],
-                    'js/scripts.js.gzip': ['js/scripts.js'],
-                    'blog/wp-content/themes/geryit/css/styles.css.gzip': ['blog/wp-content/themes/geryit/css/styles.css'],
-                    'blog/wp-content/themes/geryit/js/scripts.min.js.gzip': ['blog/wp-content/themes/geryit/js/scripts.min.js']
-                }
+            production: {
+                files: [{
+                    expand: true,
+                    cwd: './',
+                    src: ['**/*.css'],
+                    dest: './test',
+                    rename: function (dest, src) {
+                        return dest + '/' + src + '.gzip';
+                    }
+                }]
             }
         },
 
@@ -112,9 +120,9 @@ module.exports = function (grunt) {
             css: {
                 files: {
                     expand: true,
-                    cwd: '/',
+                    cwd: './',
                     src: ['**/*.gzip'],
-                    dest: '/'
+                    dest: './'
                 }
             }
         },
