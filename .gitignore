@@ -3,8 +3,5 @@
 bower_components
 node_modules
 .tmp
-/css/styles.css.gzip
-/css/styles.css
-/js/scripts.js
-/js/scripts.min.js
-/js/scripts.js.gzip
+*.gzip
+styles.css
