@@ -79,7 +79,7 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,
                     cwd: 'dist/',
-                    src: ['*.*'],
+                    src: ['*.css','*.js'],
                     dest: 'dist/',
                     rename: function (dest, src) {
                         return dest + '/' + src + '.gzip';
@@ -139,8 +139,8 @@ module.exports = function (grunt) {
             }
         }
     });
-    grunt.registerTask('default', ['newer:less']);
-    grunt.registerTask('build', ['regex-replace', 'less', 'newer:uglify']);
+    grunt.registerTask('default', ['less']);
+    grunt.registerTask('build', ['regex-replace', 'less', 'newer:uglify', 'newer:compress']);
     grunt.registerTask('deploy', [
         'build',
         'aws_s3',

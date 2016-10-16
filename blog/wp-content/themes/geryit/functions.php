@@ -116,8 +116,8 @@ function GetBetween($content,$start,$end){
 
 
 function geryit_scripts() {
-    wp_enqueue_style( 'styles', '//d2g83xhm015jzr.cloudfront.net/dist/styles.min.css.gzip?v=9369',array(), null );
-    wp_enqueue_script( 'scripts', '//d2g83xhm015jzr.cloudfront.net/dist/scripts.min.js.gzip?v=9369', array('jquery'), null, true);
+    wp_enqueue_style( 'styles', '//d2g83xhm015jzr.cloudfront.net/dist/styles.min.css.gzip?v=7955',array(), null );
+    wp_enqueue_script( 'scripts', '//d2g83xhm015jzr.cloudfront.net/dist/scripts.min.js.gzip?v=7955', array('jquery'), null, true);
 }
 add_action( 'wp_enqueue_scripts', 'geryit_scripts' );
 
