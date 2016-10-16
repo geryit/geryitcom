@@ -137,8 +137,8 @@ $latest_work_id = 31;
 		</script>
 		<? } ?>
 
-        <link rel="stylesheet" href="//d2g83xhm015jzr.cloudfront.net/dist/styles.min.css?v=3848" />
-        <script src="//d2g83xhm015jzr.cloudfront.net/dist/scripts.min.js?v=3848"></script>
+        <link rel="stylesheet" href="//d2g83xhm015jzr.cloudfront.net/dist/styles.min.css?v=4886" />
+        <script src="//d2g83xhm015jzr.cloudfront.net/dist/scripts.min.js?v=4886"></script>
 
     <!-- W3TC-include-js -->
     <!-- W3TC-include-css -->

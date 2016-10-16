@@ -59,6 +59,17 @@ module.exports = function (grunt) {
                 }
             }
         },
+
+        inlinecss: {
+            main: {
+                options: {
+                },
+                files: {
+                    'out.html': 'in.html'
+                }
+            }
+        },
+
         //
         // compress: {
         //     options: {
