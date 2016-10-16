@@ -5,7 +5,7 @@
     <h1><span>Code Samples</span></h1>
     <ul>
 	    <li>
-	    	<img src="//d2g83xhm015jzr.cloudfront.net/images5/code-samples/snow-falling.jpg?v=<%= fourDigits %>" alt="sample1" />
+	    	<img src="//d2g83xhm015jzr.cloudfront.net/images/code-samples/snow-falling.jpg?v=<%= fourDigits %>" alt="sample1" />
 	    	<div class="details">
 	    		<h2>Snow Falling Animation - CSS3</h2>
 	    		<h3>A very simple animation sample that I used CSS3 webkit animations and transforms</h3>
@@ -14,7 +14,7 @@
 	    	</div>
 	    </li>
 	    <li>
-	    	<img src="//d2g83xhm015jzr.cloudfront.net/images5/code-samples/html5-video.jpg?v=<%= fourDigits %>" alt="sample2" />
+	    	<img src="//d2g83xhm015jzr.cloudfront.net/images/code-samples/html5-video.jpg?v=<%= fourDigits %>" alt="sample2" />
             <div class="details">
 	    		<h2>HTML5 Video Player with HD Option - HTML5</h2>
 	    		<h3>This is an additional script to VideoJS Player that I used on Mindwork3d Project.</h3>
@@ -23,7 +23,7 @@
             </div>
 	    </li>
 	    <li>
-	    	<img src="//d2g83xhm015jzr.cloudfront.net/images5/code-samples/get-latest-tweet.jpg?v=<%= fourDigits %>" alt="sample3" />
+	    	<img src="//d2g83xhm015jzr.cloudfront.net/images/code-samples/get-latest-tweet.jpg?v=<%= fourDigits %>" alt="sample3" />
             <div class="details">
 	    		<h2>Get Your Latest Tweet - JSON</h2>
 	    		<h3>A very simple script to add your latest tweet to your website, blog...</h3>

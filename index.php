@@ -8,7 +8,7 @@ $latest_work_id = 31;
 ?>
 
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="en" class="site">
 <head>
 		<?
 		$page = $_GET["page"];
@@ -58,8 +58,8 @@ $latest_work_id = 31;
 		<meta name="author" content="Goksel Eryigit">
 
 		<link rel="shortcut icon" href="//d2g83xhm015jzr.cloudfront.net/favicon.ico" type="image/x-icon" />
-		<link rel="apple-touch-icon" href="//d2g83xhm015jzr.cloudfront.net/images5/share.gif?1">
-		<link rel="image_src" href="//d2g83xhm015jzr.cloudfront.net/images5/share.gif?1" />
+		<link rel="apple-touch-icon" href="//d2g83xhm015jzr.cloudfront.net/images/share.gif?1">
+		<link rel="image_src" href="//d2g83xhm015jzr.cloudfront.net/images/share.gif?1" />
 
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -137,8 +137,8 @@ $latest_work_id = 31;
 		</script>
 		<? } ?>
 
-        <link rel="stylesheet" href="//d2g83xhm015jzr.cloudfront.net/css/styles.css.gzip?v=9489" />
-        <script type="text/javascript" src="//d2g83xhm015jzr.cloudfront.net/js/scripts.js.gzip?v=9489"></script>
+        <link rel="stylesheet" href="//d2g83xhm015jzr.cloudfront.net/dist/styles.min.css?v=3848" />
+        <script src="//d2g83xhm015jzr.cloudfront.net/dist/scripts.min.js?v=3848"></script>
 
     <!-- W3TC-include-js -->
     <!-- W3TC-include-css -->

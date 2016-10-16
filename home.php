@@ -45,7 +45,7 @@
                         <count($files);$i++){
                         ?>
 						<img alt="latest-work-<?=$latest_work_id;?>"
-							src="//d2g83xhm015jzr.cloudfront.net/images5/works-big/<?=$latest_work_id;?>/<?=$files[$i];?>" />
+							src="//d2g83xhm015jzr.cloudfront.net/images/works-big/<?=$latest_work_id;?>/<?=$files[$i];?>" />
 						<? }?>
 					</div>
 					<p>

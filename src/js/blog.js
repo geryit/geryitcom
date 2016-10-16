@@ -19,45 +19,6 @@ $( document ).ready(function() {
 
         });
     });
-    $("#menu li").each(function () {
-        $(this).prepend('<p class="p1">&nbsp;</p>').append('<p class="p2">&nbsp;</p>');
-    });
-    $("#menu ul li .p1").css("background-position", "16px 0px");
-
-    $("#menu ul li .p2").css("background-position", "-16px 0px");
-    $("#menu ul li a").hover(function () {
-
-        $(this).parent().find(".p1").animate({
-            "background-position": "4px 0px"
-        }, {
-            duration: 200,
-            queue: false
-        });
-
-        $(this).parent().find(".p2").animate({
-            "background-position": "0px 0px"
-        }, {
-            duration: 200,
-            queue: false
-        });
-
-    }, function () {
-
-        $(this).parent().find(".p1").animate({
-            "background-position": "16px 0px"
-        }, {
-            duration: 200,
-            queue: false
-        });
-
-        $(this).parent().find(".p2").animate({
-            "background-position": "-16px 0px"
-        }, {
-            duration: 200,
-            queue: false
-        });
-
-    });
     $("#searchForm input[type=text]").focus(function () {
         if ($(this).val() == $(this).attr("title"))
             $(this).val("");

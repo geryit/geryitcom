@@ -12,9 +12,8 @@ module.exports = function (grunt) {
                 //specify a target with any name
                 src: [
                     'index.php',
-                    'css/styles.less',
                     'blog/wp-content/themes/geryit/functions.php',
-                    'blog/wp-content/themes/geryit/css/styles.less'
+                    'src/less/*.less'
                 ],
                 actions: [
                     {
@@ -23,8 +22,8 @@ module.exports = function (grunt) {
                         replace: ''
                     },
                     {
-                        name: 'add version number to strings ending with .png, .jpg... ',
-                        search: /\.(gzip|png|jpg|svg)/g,
+                        name: 'find specific strings and add version',
+                        search: /(styles.min.css|scripts.min.js)/g,
                         replace: function (arg1) {
                             if (arg1) return arg1 + '?v=' + fourDigits;
                         }
@@ -38,66 +37,45 @@ module.exports = function (grunt) {
             options: {
                 plugins: [
                     new (require('less-plugin-autoprefix'))({browsers: ["last 2 versions"]}),
-                    new (require('less-plugin-clean-css'))()
+                    new (require('less-plugin-clean-css'))({rebase: true})
                 ]
             },
             production: {
-                files: [
-                    {
-                        expand: true,
-                        cwd: './',
-                        src: ['**/styles.less'],
-                        dest: './',
-                        ext: ".css"
-                    }
-                ]
-            }
-        },
-
-
-        concat: {
-            js: {
                 files: {
-                    'js/scripts.js': [
-                        'js/jquery.min.js',
-                        'js/jquery.cycle.lite.min.js',
-                        'js/custom.js'
-                    ]
-
+                    'dist/styles.min.css': 'src/less/styles.less'
                 }
             }
         },
 
         uglify: {
             production: {
-                files: [
-                    {
-                        expand: true,
-                        cwd: './',
-                        src: ['**/styles.less'],
-                        dest: './',
-                        ext: ".css"
-                    }
-                ]
+                files: {
+                    'dist/scripts.min.js': [
+                        'src/js/jquery.min.js',
+                        'src/js/jquery.cycle.lite.min.js',
+                        'src/js/site.js',
+                        'src/js/blog.js'
+                    ]
+                }
             }
         },
-
-        compress: {
-            options: {
-                mode: 'gzip'
-            },
-            production: {
-                files: [{
-                    expand: true,
-                    cwd: './',
-                    src: ['**/*.css'],
-                    dest: './test',
-                    rename: function (dest, src) {
-                        return dest + '/' + src + '.gzip';
-                    }
-                }]
-            }
-        },
+        //
+        // compress: {
+        //     options: {
+        //         mode: 'gzip'
+        //     },
+        //     production: {
+        //         files: [{
+        //             expand: true,
+        //             cwd: './',
+        //             src: ['**/ge_styles.min.css', '**/ge_scripts.min.js'],
+        //             dest: './',
+        //             rename: function (dest, src) {
+        //                 return dest + '/' + src + '.gzip';
+        //             }
+        //         }]
+        //     }
+        // },
 
         aws: grunt.file.readJSON('.aws.json'), // Read the file
 
@@ -112,18 +90,15 @@ module.exports = function (grunt) {
                 differential: true,
                 params: {
                     CacheControl: 'public, max-age=31536000',
-                    ContentEncoding: 'gzip', // applies to all the files!
-                    ContentType: 'text/css',
+                    // ContentEncoding: 'gzip', // applies to all the files!
+                    // ContentType: 'text/css',
                     Expires: new Date(new Date().setFullYear(new Date().getFullYear() + 1))
                 }
             },
-            css: {
-                files: {
-                    expand: true,
-                    cwd: './',
-                    src: ['**/*.gzip'],
-                    dest: './'
-                }
+            production: {
+                files: [{
+                    expand: true, cwd: 'dist/', src: ['**'], dest: 'dist/'
+                }]
             }
         },
 
@@ -141,9 +116,11 @@ module.exports = function (grunt) {
         }
     });
     grunt.registerTask('default', ['newer:less']);
-    grunt.registerTask('build', ['regex-replace', 'newer:less', 'newer:concat', 'newer:uglify', 'newer:compress', 'aws_s3', 'rsync']);
+    grunt.registerTask('build', ['regex-replace', 'less', 'newer:uglify']);
     grunt.registerTask('deploy', [
-        'build'
+        'build',
+        'aws_s3',
+        'rsync'
     ]);
 };
 
