@@ -1,26 +1,19 @@
-RewriteEngine on
-ModPagespeed on
+#RewriteEngine on
+#ModPagespeed on
+#
+## 1 month (1000 miliseconds=1sec)
+#ModPagespeedImplicitCacheTtlMs 2592000000
+#
+#ModPagespeedEnableFilters collapse_whitespace,convert_meta_tags,elide_attributes,extend_cache,pedantic,remove_comments,remove_quotes
+#
+#ModPagespeedEnableFilters combine_javascript,canonicalize_javascript_libraries,rewrite_javascript,defer_javascript,inline_javascript
+##ModPagespeedJsInlineMaxBytes 100000000
+#
+#ModPagespeedEnableFilters prioritize_critical_css
+#ModPagespeedCssInlineMaxBytes 100000000
 
-# 1 month (1000 miliseconds=1sec)
-ModPagespeedImplicitCacheTtlMs 2592000000
-
-ModPagespeedEnableFilters collapse_whitespace,convert_meta_tags,elide_attributes,extend_cache,pedantic,remove_comments,remove_quotes
-
-ModPagespeedEnableFilters combine_javascript,canonicalize_javascript_libraries,rewrite_javascript,defer_javascript,inline_javascript
-#ModPagespeedJsInlineMaxBytes 100000000
-
-ModPagespeedEnableFilters prioritize_critical_css
-ModPagespeedCssInlineMaxBytes 100000000
 
 
-RewriteRule ^home$  index.php?page=home [L]
-RewriteRule ^works$  index.php?page=works [L]
-RewriteRule ^code-samples$  index.php?page=code-samples [L]
-RewriteRule ^works/(.*) index.php?page=works&tag=$1 [L]
-RewriteRule ^info$  index.php?page=info [L]
-RewriteRule ^thanks$  index.php?page=thanks [L]
-RewriteRule ^contact$  index.php?page=contact [L]
-RedirectMatch 301 /blog/([0-9]+)/([0-9]+)/(.*)$ /blog/$3
 #Header always append X-Frame-Options SAMEORIGIN
 #
 ## BEGIN GZIP

@@ -6,31 +6,31 @@ module.exports = function (grunt) {
     grunt.initConfig({
 
 
-        // 'regex-replace': {
-        //
-        //     assets: {
-        //         //specify a target with any name
-        //         src: [
-        //             'index.php',
-        //             'blog/wp-content/themes/geryit/functions.php',
-        //             'src/less/*.less'
-        //         ],
-        //         actions: [
-        //             {
-        //                 name: 'remove version with strings ?1111 ',
-        //                 search: /\?v=\d\d\d\d/g,
-        //                 replace: ''
-        //             },
-        //             {
-        //                 name: 'find specific strings and add version',
-        //                 search: /(styles.min.css|scripts.min.js)/g,
-        //                 replace: function (arg1) {
-        //                     if (arg1) return arg1 + '?v=' + fourDigits;
-        //                 }
-        //             }
-        //         ]
-        //     }
-        // },
+        'regex-replace': {
+
+            assets: {
+                //specify a target with any name
+                src: [
+                    'index.php',
+                    'blog/wp-content/themes/geryit/functions.php',
+                    'src/less/*.less'
+                ],
+                actions: [
+                    {
+                        name: 'remove version with strings ?1111 ',
+                        search: /\?v=\d\d\d\d/g,
+                        replace: ''
+                    },
+                    {
+                        name: 'find specific strings and add version',
+                        search: /(styles.min.css|scripts.min.js)/g,
+                        replace: function (arg1) {
+                            if (arg1) return arg1 + '?v=' + fourDigits;
+                        }
+                    }
+                ]
+            }
+        },
 
 
         less: {
@@ -131,7 +131,7 @@ module.exports = function (grunt) {
     });
     grunt.registerTask('default', ['less']);
     grunt.registerTask('build', [
-        // 'regex-replace',
+        'regex-replace',
         'less',
         'newer:uglify',
         // 'newer:compress'

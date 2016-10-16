@@ -203,6 +203,7 @@ var geryit = {
                 return false;
             }
         });
+        
         if ($("#home").length) {
             /*Begin JSON */
             /* Begin get last tweet */

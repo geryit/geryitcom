@@ -63,7 +63,7 @@ $latest_work_id = 31;
     <link rel="apple-touch-icon" href="//d2g83xhm015jzr.cloudfront.net/images/share.gif">
     <link rel="image_src" href="//d2g83xhm015jzr.cloudfront.net/images/share.gif"/>
 
-    <link rel="stylesheet" type="text/css" href="dist/styles.min.css"/>
+    <link rel="stylesheet" type="text/css" href="dist/styles.min.css?v=2374"/>
 
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
@@ -160,7 +160,7 @@ if ($_GET["tag"]) {
 
 
 
-<script src="dist/scripts.min.js"></script>
+<script src="dist/scripts.min.js?v=2374"></script>
 </body>
 </html>
 
