@@ -116,10 +116,12 @@ function GetBetween($content,$start,$end){
 
 
 function geryit_scripts() {
-    wp_enqueue_style( 'styles', '//'.$_SERVER['HTTP_HOST'].'/dist/styles.min.css?v=2374',array(), null );
-    wp_enqueue_script( 'scripts', '//'.$_SERVER['HTTP_HOST'].'/dist/scripts.min.js?v=2374', array('jquery'), null, true);
+    wp_enqueue_style( 'styles', '//'.$_SERVER['HTTP_HOST'].'/dist/styles.min.css',array(), null );
+    wp_enqueue_script( 'scripts', '//'.$_SERVER['HTTP_HOST'].'/dist/scripts.min.js', array('jquery'), null, true);
 }
 add_action( 'wp_enqueue_scripts', 'geryit_scripts' );
+
+
 
 
 //function prefix_add_footer_styles() {

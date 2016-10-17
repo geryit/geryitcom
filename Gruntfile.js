@@ -3,6 +3,12 @@ module.exports = function (grunt) {
     require('time-grunt')(grunt);
 
     var fourDigits = Math.floor(1000 + Math.random() * 9000);
+
+    var scanFiles = [
+        'index.php',
+        'blog/wp-content/themes/geryit/functions.php',
+        'src/less/*.less'
+    ];
     grunt.initConfig({
 
 
@@ -10,11 +16,7 @@ module.exports = function (grunt) {
 
             assets: {
                 //specify a target with any name
-                src: [
-                    'index.php',
-                    'blog/wp-content/themes/geryit/functions.php',
-                    'src/less/*.less'
-                ],
+                src: scanFiles,
                 actions: [
                     {
                         name: 'remove version with strings ?1111 ',
@@ -27,6 +29,17 @@ module.exports = function (grunt) {
                         replace: function (arg1) {
                             if (arg1) return arg1 + '?v=' + fourDigits;
                         }
+                    }
+                ]
+            },
+            clean: {
+                //clean versioning
+                src: scanFiles,
+                actions: [
+                    {
+                        name: 'clean version from css and js cos sourcemaps wont work otherwise',
+                        search: /\?v=\d\d\d\d/g,
+                        replace: ''
                     }
                 ]
             }
@@ -131,15 +144,17 @@ module.exports = function (grunt) {
     });
     grunt.registerTask('default', ['less']);
     grunt.registerTask('build', [
-        'regex-replace',
+        'regex-replace:assets',
         'less',
         'newer:uglify',
+
         // 'newer:compress'
     ]);
     grunt.registerTask('deploy', [
         'build',
         // 'aws_s3',
-        'rsync'
+        'rsync',
+        'regex-replace:clean',
     ]);
 };
 
