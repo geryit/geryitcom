@@ -121,6 +121,7 @@ function geryit_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'geryit_scripts' );
 
+add_filter( 'w3tc_can_print_comment', '__return_false', 10, 1 );
 
 
 
