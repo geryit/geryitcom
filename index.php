@@ -89,7 +89,6 @@ $latest_work_id = 31;
 </noscript>
 
 <!-- End Google Tag Manager (noscript) -->
-<iframe id="getSite" src="/loading.php"></iframe>
 <div id="content">
     <div id="light">
         <div id="contentWrapper" class="container_12">
@@ -117,10 +116,10 @@ $latest_work_id = 31;
                     </ul>
                 </nav>
                 <section id="networks" class="grid_1 omega">
-                    <a href="http://www.linkedin.com/in/geryit" class="rotating"
+                    <a href="//www.linkedin.com/in/geryit" class="rotating"
                        id="n1">LinkedIn</a>
-                    <a href="http://www.facebook.com/goksel.eryigit" class="rotating" id="n2">Facebook</a>
-                    <a href="http://twitter.com/geryit" class="rotating" id="n3">Twitter</a>
+                    <a href="//www.facebook.com/goksel.eryigit" class="rotating" id="n2">Facebook</a>
+                    <a href="//twitter.com/geryit" class="rotating" id="n3">Twitter</a>
                 </section>
             </header>
             <? include $page . ".php"; ?>
@@ -131,16 +130,16 @@ $latest_work_id = 31;
     <div id="footerWrapper" class="container_12">
         <section class="grid_8">
             Copyright &copy; 2010, Goksel Eryigit | <a
-                href="http://validator.w3.org/check?uri=http://www.geryit.com<?= $_SERVER["REQUEST_URI"]; ?>">HTML5</a>
+                href="//validator.w3.org/check?uri=//www.geryit.com<?= $_SERVER["REQUEST_URI"]; ?>">HTML5</a>
             &amp; <a
-                href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.geryit.com<?= $_SERVER["REQUEST_URI"]; ?>&amp;profile=css3&amp;usermedium=all&amp;warning=1&amp;lang=en">CSS
+                href="//jigsaw.w3.org/css-validator/validator?uri=//www.geryit.com<?= $_SERVER["REQUEST_URI"]; ?>&amp;profile=css3&amp;usermedium=all&amp;warning=1&amp;lang=en">CSS
                 3</a>
-            | Designed by <a href="http://draftsman.co/">draftsman</a>
-            | Proudly powered by <a href="http://www.wordpress.org">WordPress</a>
+            | Designed by <a href="//draftsman.co/">draftsman</a>
+            | Proudly powered by <a href="//www.wordpress.org">WordPress</a>
             .
         </section>
         <aside class="grid_4">
-            <a id="rss" href="http://feeds.feedburner.com/goksel">Subscribe to Rss</a>
+            <a id="rss" href="//feeds.feedburner.com/goksel">Subscribe to Rss</a>
         </aside>
     </div>
 </footer>

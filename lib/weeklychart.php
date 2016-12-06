@@ -22,7 +22,7 @@
 		$limit = 5; //Enter the number of artist will be displayed
 		
 		// Construct the URL, and feed it through SimpleXML
-		$feed = simplexml_load_file("http://ws.audioscrobbler.com/2.0/?method=".$method."&user=".$username."&api_key=".$apikey);
+		$feed = simplexml_load_file("https://ws.audioscrobbler.com/2.0/?method=".$method."&user=".$username."&api_key=".$apikey);
 		
 		//Get artists
 		$artist = $feed->weeklyartistchart->artist;

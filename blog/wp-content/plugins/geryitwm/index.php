@@ -11,7 +11,7 @@ define('PATH', plugin_basename( dirname(__FILE__)));//rafineri
 
 define('PLUGIN_PATH', WP_CONTENT_URL.'/plugins/'.plugin_basename( dirname(__FILE__)));// http://www.trafo.com.tr/projects/cms/wp-content/plugins/rafineri
 
-define('ADMIN_PHP', "http://".$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF']);// http://www.trafo.com.tr/projects/cms/wp-admin/admin.php
+define('ADMIN_PHP', "https://".$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF']);// http://www.trafo.com.tr/projects/cms/wp-admin/admin.php
 
 define("TEMPLATE_DIR", get_bloginfo('template_directory'));//http://www.rafineri.net/2009/wp-content/themes/rafineri
 

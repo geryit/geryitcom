@@ -18,7 +18,7 @@
 					Image
 				</p>
 				<section class="innerMask">
-					<? if ($r->url != "http://www.geryit.com") { ?>
+					<? if ($r->url != "https://www.geryit.com") { ?>
 					<a href="<?=$r['url'];?>" class="launch">Launch</a>
 					<? } ?>
 					<h2>

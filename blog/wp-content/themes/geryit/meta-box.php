@@ -121,7 +121,7 @@ $meta_boxes[] = array(
 				'name' => 'Source url',
 				'id' => $prefix . 'source_url',
 				'type' => 'text',
-				'std' => 'http://net.tutsplus.com/tutorials/html-css-techniques/say-hello-to-css3-filters/'
+				'std' => 'https://net.tutsplus.com/tutorials/html-css-techniques/say-hello-to-css3-filters/'
 		),
 		array(
 				'name' => 'Source logo url',

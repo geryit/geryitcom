@@ -1,7 +1,7 @@
 <?php
 
 define('ROOT', get_bloginfo('template_directory'));
-define('CURRENT_URL', 'http://'.$_SERVER["HTTP_HOST"].$_SERVER['REQUEST_URI']);
+define('CURRENT_URL', 'https://'.$_SERVER["HTTP_HOST"].$_SERVER['REQUEST_URI']);
 define('URL', get_bloginfo('url'));
 
 function my_init_method() {

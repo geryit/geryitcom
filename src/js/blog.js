@@ -58,17 +58,17 @@ $( document ).ready(function() {
         if ($(this).width() == 120)
             $(this).parent("p").hide();
     });
-    $(".launch").click(function () {
-        var href = $(this).attr("href");
-        $("#getSite").height(function () {
-            return $(this).height() - 45;
-        })
-        $("#getSite").attr("src", href);
-        $("body,html").addClass("oyh");
-        $("#back").fadeIn();
-        $("#getSite").fadeIn();
-        return false;
-    });
+    // $(".launch").click(function () {
+    //     var href = $(this).attr("href");
+    //     $("#getSite").height(function () {
+    //         return $(this).height() - 45;
+    //     })
+    //     $("#getSite").attr("src", href);
+    //     $("body,html").addClass("oyh");
+    //     $("#back").fadeIn();
+    //     $("#getSite").fadeIn();
+    //     return false;
+    // });
     $("#back a").click(function () {
         $("#getSite").fadeOut(function () {
             $(this).attr("src", "/loading.php");

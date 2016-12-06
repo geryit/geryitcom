@@ -8,7 +8,7 @@
             <? /*of <a class="ud-green" href="http://twitter.com/udemy">@udemy</a><? */ ?>
             and member of the <a href="https://twitter.com/awwwards"
                                  class="aw-orange">@awwwards</a> Jury . Follow me on <a
-                href="http://twitter.com/geryit" class="tw-blue">@geryit</a>
+                href="//twitter.com/geryit" class="tw-blue">@geryit</a>
         </h2>
         <div class="text2">
             <h3>Some of the clients I worked with :</h3>

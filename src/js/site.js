@@ -130,17 +130,17 @@ var geryit = {
                 });
                 return false;
             });
-            $(".launch").click(function () {
-                var href = $(this).attr("href");
-                $("#getSite").height(function () {
-                    return $(this).height() - 45;
-                })
-                $("#getSite").attr("src", href);
-                $("body").addClass("oyh");
-                $("#back").fadeIn();
-                $("#getSite").fadeIn();
-                return false;
-            });
+            // $(".launch").click(function () {
+            //     var href = $(this).attr("href");
+            //     $("#getSite").height(function () {
+            //         return $(this).height() - 45;
+            //     })
+            //     $("#getSite").attr("src", href);
+            //     $("body").addClass("oyh");
+            //     $("#back").fadeIn();
+            //     $("#getSite").fadeIn();
+            //     return false;
+            // });
             $("#back a").click(function () {
 
                 $("#getSite").fadeOut(function () {
@@ -203,7 +203,7 @@ var geryit = {
                 return false;
             }
         });
-        
+
         if ($("#home").length) {
             /*Begin JSON */
             /* Begin get last tweet */
@@ -213,7 +213,7 @@ var geryit = {
 //			});
             /* End get last tweet */
             /* Begin get posts from blog */
-            $.getJSON('http://geryit.com/blog/feed/?feed=json&jsonp=?', function (data) {
+            $.getJSON('https://geryit.com/blog/feed/?feed=json&jsonp=?', function (data) {
                 var html = "";
                 for (i = 0; i < 3; i++) {
                     var title = data[i].title;

@@ -22,7 +22,6 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TX79MN"
                       height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-		<iframe id="getSite" src="/loading.php"></iframe>
 		<div id="back">
 			<a href="">&lt; BACK TO POST</a>
 		</div>
@@ -51,9 +50,9 @@
 							</ul>
 						</nav>
 						<section id="networks" class="grid_1 omega">
-							<a href="http://www.linkedin.com/in/geryit" class="rotating" id="n1">LinkedIn</a>
-							<a href="http://www.facebook.com/goksel.eryigit" class="rotating" id="n2">Facebook</a>
-							<a href="http://twitter.com/geryit" class="rotating" id="n3">Twitter</a>
+							<a href="https://www.linkedin.com/in/geryit" class="rotating" id="n1">LinkedIn</a>
+							<a href="https://www.facebook.com/goksel.eryigit" class="rotating" id="n2">Facebook</a>
+							<a href="https://twitter.com/geryit" class="rotating" id="n3">Twitter</a>
 						</section>
 					</header>
 					<div id="blog" class="grid_12">
@@ -167,18 +166,18 @@
 		<footer id="footer">
 			<div id="footerWrapper" class="container_12">
 				<section class="grid_8">
-					Copyright &copy; 2010, Goksel Eryigit  | <a href="http://validator.w3.org/check?uri=http://www.geryit.com<?=$_SERVER["REQUEST_URI"];?>">HTML5</a>
-					&amp; <a href="http://jigsaw.w3.org/css-validator/check/referer/?profile=css3">CSS 3</a>
-					| Designed by <a href="http://www.thecoreunits.com">The Core Units</a>
-					| Proudly powered by <a href="http://www.wordpress.org">WordPress</a>.
+					Copyright &copy; 2010, Goksel Eryigit  | <a href="https://validator.w3.org/check?uri=https://www.geryit.com<?=$_SERVER["REQUEST_URI"];?>">HTML5</a>
+					&amp; <a href="https://jigsaw.w3.org/css-validator/check/referer/?profile=css3">CSS 3</a>
+					| Designed by <a href="https://www.thecoreunits.com">The Core Units</a>
+					| Proudly powered by <a href="https://www.wordpress.org">WordPress</a>.
 					<p>
-						<a href="http://www.w3.org/html/logo/">
+						<a href="https://www.w3.org/html/logo/">
 							<img src="//d2g83xhm015jzr.cloudfront.net/images/html5-logo.png" width="85" height="38" alt="HTML5 Powered with CSS3 / Styling and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
 						</a>
 					</p>
 				</section>
 				<aside class="grid_4">
-					<a id="rss" href="http://feeds.feedburner.com/goksel">Subscribe to Rss</a>
+					<a id="rss" href="https://feeds.feedburner.com/goksel">Subscribe to Rss</a>
 				</aside>
 			</div>
 		</footer>
