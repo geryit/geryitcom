@@ -136,7 +136,7 @@ module.exports = function (grunt) {
             production: {
                 options: {
                     src: "./",
-                    dest: "/var/www/geryit.com",
+                    dest: "/home/ubuntu/geryit.com",
                     host: "geryit"
                 }
             }
