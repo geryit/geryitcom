@@ -9,9 +9,9 @@
     <h3 class="also">You can also find me on;
         <a href="//twitter.com/geryit" class="twi">Twitter</a>,
         <a href="https://github.com/geryit" class="git">Github</a>,
-        <a href="//www.behance.net/goksel" class="stack">Stackoverflow</a> and follow me
+        <a href="http://stackoverflow.com/users/263050/goksel" class="stack">Stackoverflow</a> and follow me
         on <a href="//feeds.feedburner.com/goksel" class="rss">RSS</a></h3>
 
-    <a href="/resume" class="cv rotating">DOWNLOAD</a>
+    <a href="/resume/" class="cv rotating">DOWNLOAD</a>
 
 </div>

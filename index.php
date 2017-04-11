@@ -11,7 +11,7 @@ $latest_work_id = 31;
 <html lang="en" class="site">
 <head>
     <?
-    $page = $_GET["page"];
+    $page = $_GET['page'] ?? '';
 
     if ($page == "home") {
         $title = "Goksel Eryigit - Front-end Developer &amp;raquo; Home";
@@ -33,8 +33,8 @@ $latest_work_id = 31;
         $des = "Goksel Eryigit is a Front-End and Web Application Developer based in Turkey.";
     }
 
-    if ($_GET["tag"]) {
-        $tag = $_GET["tag"];
+    $tag = $_GET['tag'] ?? '';
+    if ($tag) {
         $title = "Works filtered by tag: " . $tag;
         $des = "Works filtered by tag: " . $tag;
     }
@@ -146,9 +146,8 @@ $latest_work_id = 31;
 
 
 <?
-if ($_GET["tag"]) {
-    $tag = $_GET["tag"];
-
+$tag = $_GET['tag'] ?? '';
+if ($tag) {
     ?>
     <script>
         $(function () {

@@ -78,7 +78,8 @@
 										$content = get_the_content();
 										$html = str_get_html($content);
 										$first_img = $html->find('img');
-										$src = $first_img[0]->src;
+										$src = $first_img[0]->src ?? '';
+
 
 										if (!$src) $src = "//d2g83xhm015jzr.cloudfront.net/images/cats_general.png";
 										if ($thumb != ""){
