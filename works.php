@@ -4,9 +4,9 @@
 <div id="works" class="grid_12">
 	<h1><span>Works</span></h1>
 	<section id="workList" class="grid_12 alpha omega">
-		<? 
+		<?
 		$result = $conn->query("SELECT * FROM ".$wpdb->prefix."works order by ord desc");
-	
+
 		while($r = $result->fetch_assoc()) {
 		?>
 		<article class="grid_3">
@@ -18,7 +18,7 @@
 					Image
 				</p>
 				<section class="innerMask">
-					<? if ($r->url != "https://www.geryit.com") { ?>
+					<? if ($r['url'] != "https://www.geryit.com") { ?>
 					<a href="<?=$r['url'];?>" class="launch">Launch</a>
 					<? } ?>
 					<h2>
@@ -37,11 +37,11 @@
 				<section class="tags">
 					<h4>RELATED TAGS</h4>
 					<ul>
-						<? 
+						<?
 						$tags = explode(",", $r['tags']);
 						for ($i = 0; $i < count($tags); $i++) {
 						    $tag = trim($tags[$i]);
-						    
+
 						?>
 						<li>
 							<a href="" title='Click to filter by "<?=ucwords($tag);?>" tag'><? echo $tag; ?></a>
@@ -55,7 +55,8 @@
 	</section>
 </div>
 <?
-if ($_GET["tag"]){?>
+$tag = $_GET["tag"] ?? '';
+if ($tag){?>
 <script>
 window.onload = function() {
   $('html, body').animate({scrollTop: $("#workList").offset().top-15}, 1000);
