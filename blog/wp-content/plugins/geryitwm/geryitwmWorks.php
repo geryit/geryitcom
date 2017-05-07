@@ -1,6 +1,8 @@
 ﻿<?
-$msg = $_GET["msg"];
-$q = mysqli_query("SELECT * FROM ".$wpdb->prefix."works  order by ord desc");
+$conn = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+$msg = $_POST['msg'] ?? '';
+
+$q = mysqli_query($conn, "SELECT * FROM ".$wpdb->prefix."works  order by ord desc");
 while($r = mysqli_fetch_object($q)) {$wids[] = $r->wid;$ords[] = $r->ord;}
 ?>
 <div id="geryitwm" class="wrap">
@@ -21,7 +23,7 @@ while($r = mysqli_fetch_object($q)) {$wids[] = $r->wid;$ords[] = $r->ord;}
                 <li class="w5">Action</li>
             </ul>
         </li>
-        
+
         <li class="add">
         	<form method="post" enctype="multipart/form-data" action="admin.php?page=geryitwm/index.php&act=add">
                 <ul>
@@ -36,9 +38,9 @@ while($r = mysqli_fetch_object($q)) {$wids[] = $r->wid;$ords[] = $r->ord;}
                 </ul>
             </form>
         </li>
-        
+
 		<?
-        $q = mysqli_query("SELECT * FROM ".$wpdb->prefix."works order by ord desc");
+        $q = mysqli_query($conn, "SELECT * FROM ".$wpdb->prefix."works order by ord desc");
         for($i=0;$r=mysqli_fetch_assoc($q);$i++){
 			?>
 			<li <? if($i%2==1) echo 'class="liType2" ';?>>
@@ -46,8 +48,8 @@ while($r = mysqli_fetch_object($q)) {$wids[] = $r->wid;$ords[] = $r->ord;}
                     <ul>
                         <li id="moveWorks" class="w5">
 							<?=$r["ord"];?><br />
-                            <? if($ords[$i+1]){?><a href="admin.php?page=geryitwm/index.php&act=move&newOrd=<?=$ords[$i+1];?>&currentWid=<?=$r['wid'];?>&effectedNewOrd=<?=$ords[$i];?>&effectedId=<?=$wids[$i+1];?>">&darr;</a><? }?> 
-                            <? if($ords[$i-1]){?><a href="admin.php?page=geryitwm/index.php&act=move&newOrd=<?=$ords[$i-1];?>&currentWid=<?=$r['wid'];?>&effectedNewOrd=<?=$ords[$i];?>&effectedId=<?=$wids[$i-1];?>">&uarr;</a><? }?> 
+                            <? if($ords[$i+1]){?><a href="admin.php?page=geryitwm/index.php&act=move&newOrd=<?=$ords[$i+1];?>&currentWid=<?=$r['wid'];?>&effectedNewOrd=<?=$ords[$i];?>&effectedId=<?=$wids[$i+1];?>">&darr;</a><? }?>
+                            <? if($ords[$i-1]){?><a href="admin.php?page=geryitwm/index.php&act=move&newOrd=<?=$ords[$i-1];?>&currentWid=<?=$r['wid'];?>&effectedNewOrd=<?=$ords[$i];?>&effectedId=<?=$wids[$i-1];?>">&uarr;</a><? }?>
                         </li>
                         <li class="w10"><textarea name="title"><?=$r["title"];?></textarea></li>
                         <li class="w5"><input type="text" name="year" value="<?=$r["year"];?>" maxlength="2" /></li>
