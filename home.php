@@ -32,7 +32,7 @@
                 <figure>
                     <div id="cycle_slide">
                         <img alt="latest-work-<?= $latest_work_id; ?>"
-                             src="//d2g83xhm015jzr.cloudfront.net/images/works-big/<?= $latest_work_id; ?>/lunapark1.jpg"/>
+                             src="//geryit.com/images/works-big/<?= $latest_work_id; ?>/lunapark1.jpg"/>
                     </div>
                     <p>
 						<span><?= $r['title']; ?>

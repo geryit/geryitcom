@@ -58,10 +58,10 @@ $latest_work_id = 31;
     <meta name="description" content="<?= $des; ?>"/>
     <meta name="author" content="Goksel Eryigit">
 
-    <link rel="shortcut icon" href="//d2g83xhm015jzr.cloudfront.net/favicon.ico"
+    <link rel="shortcut icon" href="//geryit.com/favicon.ico"
           type="image/x-icon"/>
-    <link rel="apple-touch-icon" href="//d2g83xhm015jzr.cloudfront.net/images/share.gif">
-    <link rel="image_src" href="//d2g83xhm015jzr.cloudfront.net/images/share.gif"/>
+    <link rel="apple-touch-icon" href="//geryit.com/images/share.gif">
+    <link rel="image_src" href="//geryit.com/images/share.gif"/>
 
     <link rel="stylesheet" type="text/css" href="dist/styles.min.css"/>
 

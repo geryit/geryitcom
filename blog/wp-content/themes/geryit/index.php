@@ -81,7 +81,7 @@
 										$src = $first_img[0]->src ?? '';
 
 
-										if (!$src) $src = "//d2g83xhm015jzr.cloudfront.net/images/cats_general.png";
+										if (!$src) $src = "//geryit.com/images/cats_general.png";
 										if ($thumb != ""){
 											echo $thumb;
 										}else{?>
@@ -173,7 +173,7 @@
 					| Proudly powered by <a href="https://www.wordpress.org">WordPress</a>.
 					<p>
 						<a href="https://www.w3.org/html/logo/">
-							<img src="//d2g83xhm015jzr.cloudfront.net/images/html5-logo.png" width="85" height="38" alt="HTML5 Powered with CSS3 / Styling and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
+							<img src="//geryit.com/images/html5-logo.png" width="85" height="38" alt="HTML5 Powered with CSS3 / Styling and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
 						</a>
 					</p>
 				</section>
