@@ -4,7 +4,7 @@
     </h1>
     <section id="shortInfo">
         <h2 class="text1">
-            I am a 33 year old Front-end Developer from Turkey
+            I am a 35 year old Front-end Developer
             <? /*of <a class="ud-green" href="http://twitter.com/udemy">@udemy</a><? */ ?>
             and member of the <a href="https://twitter.com/awwwards"
                                  class="aw-orange">@awwwards</a> Jury . Follow me on <a
