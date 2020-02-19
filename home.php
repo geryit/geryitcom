@@ -13,9 +13,7 @@
         <div class="text2">
             <h3>Some of the clients I worked with :</h3>
             <article>
-                <span id="q1">&nbsp;</span> <a href="/works/activision">Activision</a>,
-                <a href="/works/bridgestone">Bridgestone</a>, <a
-                    href="/works/starbuck">Starbucks</a>, Honda Turkey, Varyap, Boyner,
+                <span id="q1">&nbsp;</span>Activision, Bridgestone, Starbucks, Honda Turkey, Varyap, Boyner,
                 Beymen, Avea, Hurriyet &amp; <a href="/works" title="Click for more">more</a>
                 <span id="q2">&nbsp;</span>
             </article>
