@@ -3,5 +3,5 @@ get wp-config.php from https://docs.google.com/document/d/19O7BR8Iv4NysCx4GEmVMW
 get .aws.json from https://docs.google.com/document/d/13dezzg0OGBKmevdb0s-GwdmmGsvcNhHhY8pSZB6sTxY/edit and put root
 ```
 yarn
-yarn grunt deploy
+yarn deploy
 ```

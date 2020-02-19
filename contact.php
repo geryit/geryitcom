@@ -2,8 +2,7 @@
 	<h1><span>Contact</span></h1>
 	<h2 class="want">Get in touch with me on;</h2>
 	<div class="ways">
-		<span>Phone:</span>
-		+90 (532) 581-9818 &nbsp;&nbsp;/&nbsp;&nbsp; <span>Skype:</span>
+		<span>Skype:</span>
 		<a id="chat" class="rotating" href="skype:goksel.eryigit?chat">Chat with me</a>
 		<img src="//geryit.com/images/pixel.gif" width="110" height="1" />/&nbsp;&nbsp; <span>e-mail</span>: <a href="mailto:hello@geryit.com">hello@geryit.com</a>&nbsp;&nbsp; / &nbsp;&nbsp;twitter: <a href="https://twitter.com/geryit" style="color:#3ecfff;">@geryit</a>
 	</div>
@@ -11,7 +10,7 @@
 		<section class="form grid_8 alpha">
 			<h3 class="if">You want to say hello ?</h3>
 			<form id="contactForm" name="contactForm" action="" method="post">
-				<p> 
+				<p>
 					<sub>* Please write your subject</sub>
 					<input type="text" name="subject" value="Your Subject" title="Your Subject" tabindex="1"/>
 				</p>
@@ -25,7 +24,7 @@
 					<sub>* Please write your message</sub>
 					<textarea name="msg" title="Your Message" tabindex="4">Your Message</textarea>
 				</p>
-				<p class="sendRow"> 
+				<p class="sendRow">
 					<a href="" class="rotating submit">send</a>
 					<b id="loader">loader</b>
 				</p>

@@ -29,7 +29,7 @@
 			<div id="light">
 				<div id="contentWrapper" class="container_12">
 					<header id="contentHeader" class="grid_12">
-						<a href="/" id="logo" class="grid_5 alpha rotating">Goksel Eryigit / FRONT-END &amp; WEB APPLICATION DEVELOPER</a>
+						<a href="/" id="logo" class="grid_5 alpha">Goksel Eryigit / FRONT-END &amp; WEB APPLICATION DEVELOPER</a>
 						<nav id="menu" class="grid_6">
 							<ul>
 								<li>

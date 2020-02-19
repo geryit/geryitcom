@@ -4,7 +4,7 @@
         always try to achieve the best solution for each case or client.</h3>
     <article class="long">
         <p><?php /*?>I am currently front-end developer of <a href="//udemy.com">Udemy</a>, <?php */ ?>feel free to chat
-            with me on +90 (532) 581-9818 or mail to <a href="mailto:hello@geryit.com">hello@geryit.com</a></p>
+            with me on <a href="mailto:hello@geryit.com">hello@geryit.com</a></p>
     </article>
     <h3 class="also">You can also find me on;
         <a href="//twitter.com/geryit" class="twi">Twitter</a>,

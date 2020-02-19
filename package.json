@@ -18,7 +18,7 @@
     "time-grunt": "2.0.0"
   },
   "scripts": {
-    "test": ""
+    "deploy": "git push; yarn grunt deploy"
   },
   "author": "",
   "dependencies": {

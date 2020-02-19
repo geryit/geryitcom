@@ -4,7 +4,7 @@
     </h1>
     <section id="shortInfo">
         <h2 class="text1">
-            I am a 35 year old Front-end Developer
+            I am a <?= date("Y") - 1983; ?> year old Front-end Developer
             <? /*of <a class="ud-green" href="http://twitter.com/udemy">@udemy</a><? */ ?>
             and member of the <a href="https://twitter.com/awwwards"
                                  class="aw-orange">@awwwards</a> Jury . Follow me on <a
@@ -48,9 +48,8 @@
                     <p class="tags"><? $tags = explode(",", $r['tags']);
                         for ($i = 0; $i < count($tags); $i++) {
                             $tag = trim($tags[$i]);
-                            if ($i != 0) echo ", "; ?><a
-                            href="/works/<?= urlencode(strtolower($tag)); ?>"
-                            title="Click to filter by '<?= ucwords($tag); ?>' tag" ><? echo $tag; ?></a><? } ?>
+                            if ($i != 0) echo ", "; ?><span
+                            title="Click to filter by '<?= ucwords($tag); ?>' tag" ><? echo $tag; ?></span><? } ?>
                     </p>
                 </div>
             </div>
