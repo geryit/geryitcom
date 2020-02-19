@@ -1,5 +1,6 @@
 {
   "name": "geryit",
+  "license": "UNLICENSED",
   "version": "1.0.0",
   "description": "",
   "main": "",
@@ -20,7 +21,6 @@
     "test": ""
   },
   "author": "",
-  "license": "",
   "dependencies": {
     "less-plugin-autoprefix": "2.0.0",
     "less-plugin-clean-css": "^1.5.1",
